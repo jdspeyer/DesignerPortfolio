@@ -4,13 +4,14 @@ The home_landing_section is where users will start on the website.
 This contains the title text and some additional basic information about you.
 */
 #home_landing_section{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: var(--branding-color-cream-50);
-
+    overflow-x: hidden !important;
+    position: relative;
 }
 
 .home_landing_section_background{
@@ -23,11 +24,13 @@ This contains the title text and some additional basic information about you.
     justify-content: flex-end;
     cursor: none !important;
     opacity: 0.85;
+    overflow-x: hidden !important;
 }
 
 .home_landing_section_background_model{
     width: 75%;
     height: 100%;
+    overflow-x: hidden !important;
 }
 
 

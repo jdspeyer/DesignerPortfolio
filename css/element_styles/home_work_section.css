@@ -11,6 +11,7 @@ left to right.
     height: 500vh; /*This is adjusted by the javascript. Changing this will not effect anything.*/
     display: flex;
     flex-direction: column;
+    overflow-x: clip;
 }
 
 /*

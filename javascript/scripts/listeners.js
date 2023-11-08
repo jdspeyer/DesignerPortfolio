@@ -23,6 +23,7 @@ document.getElementById('all_projects_button').onclick = function () { MENU_MANA
 
 if (Engine.isTouchDevice()) {
   document.getElementById('model').classList.add('ignore_input')
+  document.getElementById('cursor').style.display = 'none'
 }
 
 /// Initialize the Engine.

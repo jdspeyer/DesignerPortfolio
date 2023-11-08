@@ -24,6 +24,9 @@ document.getElementById('all_projects_button').onclick = function () { MENU_MANA
 if (Engine.isTouchDevice()) {
   document.getElementById('model').classList.add('ignore_input')
   document.getElementById('cursor').style.display = 'none'
+  document.getElementById('menu_overlay_logo').style.display = 'none'
+  document.getElementById('menu_overlay').classList = ['bottom_menu menu_dark']
+  document.getElementById('menu_overlay').style.justifyContent = 'center'
   document.getElementById('menu_overlay_exit').classList.add('mobile_overlay_exit')
 }
 

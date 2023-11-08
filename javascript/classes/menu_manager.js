@@ -50,7 +50,7 @@ class MenuManager {
       menuOnTop = false
     }
 
-    if (insideAboutSection && !insideWorkSection) {
+    if ((insideAboutSection && !insideWorkSection) || (insideAboutSection && Engine.isTouchDevice())) {
       menuColorDark = false
     }
 
@@ -189,7 +189,7 @@ class MenuManager {
 
     const state = Flip.getState(this.menuOverlay)
     /// Adjust the positioning of the menu
-    if (menuOnTop) {
+    if (menuOnTop && !Engine.isTouchDevice()) {
       updatedClassList += 'top_menu '
     } else {
       updatedClassList += 'bottom_menu '
@@ -202,11 +202,11 @@ class MenuManager {
       updatedClassList += 'menu_light '
     }
 
-    if (Engine.didScrollDown() && menuOnTop) {
+    if (Engine.didScrollDown() && menuOnTop && !Engine.isTouchDevice()) {
       updatedClassList += 'hide_menu_top'
     }
 
-    if (Engine.didScrollDown() && !menuOnTop) {
+    if (Engine.didScrollDown() && !menuOnTop && !Engine.isTouchDevice()) {
       updatedClassList += 'hide_menu_bottom'
     }
 

@@ -25,6 +25,7 @@ home_work_section.
     display: flex;
     flex-direction: column;
     position: sticky;
+    will-change: transform;
     top: 0;
     background-color: var(--branding-color-cream-50);
 }

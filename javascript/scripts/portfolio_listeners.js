@@ -23,6 +23,11 @@ Engine.setScreenDimensions({
   innerWindowWidth: window.innerWidth
 })
 
+if (Engine.isTouchDevice()) {
+  document.getElementById('cursor').style.display = 'none'
+  document.getElementById('menu_overlay_exit').classList.add('mobile_overlay_exit')
+}
+
 /// Create a listener for mouse movement and update the Engine.
 document.addEventListener('mousemove', trackMousePosition)
 function trackMousePosition (event) {

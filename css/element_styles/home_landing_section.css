@@ -10,7 +10,7 @@ This contains the title text and some additional basic information about you.
     flex-direction: column;
     justify-content: center;
     background-color: var(--branding-color-cream-50);
-    overflow-x: hidden !important;
+    overflow: hidden !important;
     position: relative;
 }
 

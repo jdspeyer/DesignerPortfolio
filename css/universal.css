@@ -54,6 +54,7 @@ html{
     scroll-behavior: smooth;
     cursor: none !important;
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 /*
@@ -66,7 +67,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100vw;
-    /* overflow-x: clip; */
+    overflow-x: clip;
 }
 
 /*

@@ -21,6 +21,10 @@ document.getElementById('portfolio_menu_item').onclick = function () { MENU_MANA
 document.getElementById('all_projects').onclick = function () { MENU_MANAGER.navTo('portfolio_menu_item', false) }
 document.getElementById('all_projects_button').onclick = function () { MENU_MANAGER.navTo('portfolio_menu_item', false) }
 
+if (Engine.isTouchDevice()) {
+  document.getElementById('model').classList.add('ignore_input')
+}
+
 /// Initialize the Engine.
 Engine.setScreenDimensions({
   screenHeight: window.outerHeight,

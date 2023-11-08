@@ -61,22 +61,18 @@ class Engine {
     return value / (height / width)
   }
 
-  static isTouchDevice () {
-    try {
-      // We try to create TouchEvent. It would fail for desktops and throw error
-      document.createEvent('TouchEvent')
-      return true
-    } catch (e) {
-      return false
-    }
-  }
-
   static updateScrollValue (event) {
     this.scrollY = window.scrollY
   }
 
   static didScrollDown (event) {
     return !(this.scrollY > window.scrollY)
+  }
+
+  static isTouchDevice () {
+    return (('ontouchstart' in window) ||
+       (navigator.maxTouchPoints > 0) ||
+       (navigator.msMaxTouchPoints > 0))
   }
 }
 

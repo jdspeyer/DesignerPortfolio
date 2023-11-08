@@ -122,7 +122,7 @@ This is the styling of your paragraphs and large text blocks.
 */
 p{
     font-size: 1.05em;
-    font-family: 'Bryant', sans-serif;
+    font-family: 'Bryant', 'Poppins', sans-serif;
     font-weight: 400;
 }
 
@@ -433,7 +433,7 @@ a:active {
 }
 
 #menu{
-    display: grid;
+    display: flex;
     place-content: center;
     position: fixed;
     z-index: 100;
@@ -618,5 +618,21 @@ a:active {
 
 .hide{
     opacity: 0;
+    pointer-events: none !important;
+}
+
+@media (max-width: 500px) {
+    #menu_overlay_exit{
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, 0%);
+        -webkit-transform: translate(-50%, 0%);
+        -moz-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+        -o-transform: translate(-50%, 0%);
+    }
+}
+
+.ignore_input{
     pointer-events: none !important;
 }

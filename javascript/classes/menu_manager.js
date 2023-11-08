@@ -172,11 +172,11 @@ class MenuManager {
         },
         onComplete: function () {
           if (key === 'index_menu_item') {
-            window.location.href = '/homepage.html'
+            window.location.href = 'homepage.html'
           }
 
           if (key === 'portfolio_menu_item') {
-            window.location.href = '/work/portfolio.html'
+            window.location.href = 'work/portfolio.html'
           }
         }
       })

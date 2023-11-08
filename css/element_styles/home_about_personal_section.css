@@ -9,7 +9,7 @@ CORE STYLING
     flex-direction: row;
     justify-content: space-between;
     overflow-y: hidden;
-    background-image: url('/assets/images/Lines.png');
+    background-image: url('../../assets/images/Lines.png');
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover;
@@ -109,7 +109,7 @@ CORE STYLING
     background-size: cover;
     background-position: center;
     transform-origin: center;
-    background-image: url('/assets/images/about_portrait_0_eyes.png');
+    background-image: url('../../assets/images/about_portrait_0_eyes.png');
     -webkit-transform: translate(-50%, -50%) scale(1.0,1.0);
     -moz-transform: translate(-50%, -50%) scale(1.0,1.0);
     -ms-transform: translate(-50%, -50%) scale(1.0,1.0);
@@ -130,7 +130,7 @@ CORE STYLING
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url('/assets/images/about_portrait_0.png');
+    background-image: url('../../assets/images/about_portrait_0.png');
 }
   
   /* Style the back side */
@@ -140,7 +140,7 @@ CORE STYLING
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/assets/images/about_portrait_1.png');
+    background-image: url('../../assets/images/about_portrait_1.png');
 }
 
 
@@ -155,7 +155,7 @@ CORE STYLING
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/assets/images/about_0.png');
+    background-image: url('../../assets/images/about_0.png');
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -172,7 +172,7 @@ CORE STYLING
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/assets/images/about_1.png');
+    background-image: url('../../assets/images/about_1.png');
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -188,7 +188,7 @@ CORE STYLING
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/assets/images/about_2.png');
+    background-image: url('../../assets/images/about_2.png');
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);

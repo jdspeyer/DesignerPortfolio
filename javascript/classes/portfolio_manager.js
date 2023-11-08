@@ -41,7 +41,7 @@ class PortfolioManager {
   #generateProjectImage (project) {
     const portfolioProjectImage = document.createElement('div')
     portfolioProjectImage.classList = ['porfolio_project_image']
-    portfolioProjectImage.style.backgroundImage = `url('./${project.coverImage}')`
+    portfolioProjectImage.style.backgroundImage = `url('../${project.coverImage}')`
     return portfolioProjectImage
   }
 

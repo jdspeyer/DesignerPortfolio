@@ -1,0 +1,300 @@
+/*
+home_work_section
+
+This tag does not effect visual elements. It will act as the vertical component of the horizontal scroll.
+
+Essentially we will be using this alongside the horizontal project tiles to allow users to scroll down but have the projects move
+left to right.
+*/
+#home_work_section{
+    width: 100vw;
+    height: 500vh; /*This is adjusted by the javascript. Changing this will not effect anything.*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+#home_work_section_mask_wrapper
+The wrapper which contains the mask and the backgrounds for the project section. This is what sits ontop of the
+home_work_section.
+*/
+#home_work_section_mask_wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-color: var(--branding-color-cream-50);
+}
+
+/*
+#home_work_section_mask_header
+This is the little divider w/ header that travels alongside with the projects
+*/
+#home_work_section_mask_header{
+    height: 10%;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+}
+
+.home_work_section_mask_header_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: var(--padding-horizontal-l);
+    padding-right: var(--padding-horizontal-l);
+}
+
+/*
+#home_work_section_mask
+This is the actual mask containing each of the projects.
+*/
+#home_work_section_mask{
+    height: 90%;
+    width: 500vw; /*This is adjusted by the javascript. Changing this will not effect anything.*/
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    z-index: 2;
+    
+}
+
+/*
+#home_work_section_background_mask
+This is the mask that is used to hide the background image. This will fade it in and out.
+*/
+#home_work_section_background_mask{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--branding-color-cream-50);
+    transition-property: opacity;
+    transition-duration: 1s;
+
+}
+
+/*
+The idle state of the #home_work_section_background_mask
+This is the styling specific to not hovering on a project mockup.
+*/
+.home_work_section_background_mask_idle{
+    opacity: 1;
+}
+
+/*
+The active state of the #home_work_section_background_mask
+This is the styling specific to hovering on a project mockup.
+*/
+.home_work_section_background_mask_hover{
+    opacity: 0.85 !important;
+}
+
+/*
+The work section that contains a background image based on what mockup is being hovered.
+This is in the very back (hence the low z-index number).
+*/
+#home_work_section_background{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+/*
+This is the wrapper assigned to each project.
+(The text and image for each one goes in here)
+*/
+.project_wrapper{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-left: var(--padding-horizontal-l);
+    padding-right: var(--padding-horizontal-l);
+}
+
+.project_information_wrapper{
+    display: flex;
+    max-height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    height: 50%
+    
+}
+
+.project_mockup_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+}
+
+/*
+This contains the mockup and the little wood block that sits underneath it.
+*/
+.project_image_wrapper{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end !important;
+    align-content: flex-end !important;
+    position: relative;
+}
+
+/*
+This is the actual mockup of the project.
+*/
+.project_image{
+    background-repeat: no-repeat; 
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}
+
+/*
+This is the styling of the project when it is not being hovered on.
+*/
+.project_image_mockup_idle{
+    transform: translate(0%, 0);
+    -webkit-transform: translate(0%, 0);
+    -moz-transform: translate(0%, 0);
+    -ms-transform: translate(0%, 0);
+    -o-transform: translate(0%, 0);
+    transition-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+/*
+This is the styling of the project when it is being hovered on.
+*/
+.project_image_mockup_hovering{
+    transform: translate(0%, var(--float-origin));
+    -webkit-transform: translate(0%, var(--float-origin));
+    -moz-transform: translate(0%, var(--float-origin));
+    -ms-transform: translate(0%, var(--float-origin));
+    -o-transform: translate(0%, var(--float-origin));
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+/*
+The idle state of the block underneath the mockup.
+*/
+.project_image_mockup_block_idle{
+    scale: 1;
+    transition-property: scale transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform-origin:  bottom;
+}
+
+/*
+The hovering state of the block underneath the mockup.
+*/
+.project_image_mockup_block_hovering{
+    scale: 1.0;
+    transition-property: scale transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform-origin:  bottom;
+}
+
+@media (max-width: 870px) {
+
+    .project_image_wrapper{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .project_information_wrapper{
+
+        width: 50%;
+    }
+}
+
+@media (max-width: 750px) {
+    .home_work_section_mask_header_text{
+        padding-left: var(--padding-horizontal-m);
+        padding-right: var(--padding-horizontal-m);
+    }
+
+    .project_wrapper{
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .project_image_wrapper{
+        position: relative;
+        width: 100% !important;
+        height: 60vh;
+    }
+
+    .project_information_wrapper{
+        height: 40vh;
+        width: 80%;
+        justify-content: space-between;
+        padding-bottom: var(--padding-vertical-l);
+    }
+}
+
+
+@media (max-width: 600px) or (min-height: 1000px) {
+    .project_wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .project_image_wrapper{
+        position: absolute;
+        z-index: 0;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100% !important;
+        height: 70vh;
+    }
+
+    .project_information_wrapper{
+        height: 30vh;
+        width: 80%;
+        position: relative;
+        z-index: 1;
+        justify-content: flex-end;
+        padding-bottom: var(--padding-vertical-l);
+    }
+
+    .project_image_mockup_hovering{
+        transform: translate(0%, -1%) !important;
+        -webkit-transform: translate(0%, -1%) !important;
+        -moz-transform: translate(0%, -1%) !important;
+        -ms-transform: translate(0%, -1%) !important;
+        -o-transform: translate(0%, -1%) !important;
+        transition-property: transform;
+        transition-duration: 1s;
+    }
+    
+}

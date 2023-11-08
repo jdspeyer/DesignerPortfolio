@@ -1,0 +1,622 @@
+/*
+:root
+
+This is where your global variables are defined. Changing these will change
+the look of various elements THROUGHOUT THE ENTIRE WEBSITE.
+
+You can change these easily here to see large changes, for more
+finite control you will need to edit each file individually. I have
+left text instructions where I think there might be things you will
+want to change.
+*/
+:root{
+    /* Colors */
+    --branding-color-teal-25: #5B99A6;
+    --branding-color-teal-50: #3F6A73;
+    --branding-color-coral-25: #de9971;
+    --branding-color-coral-50: #D99067;
+    --branding-color-brown-50: #91664E;
+    --branding-color-blue-50: #A2BAB9;
+
+    --branding-color-cream-0: #000000;
+    --branding-color-cream-50: #F7F0E7;
+    --branding-color-cream-50-opacity: rgba(247,240,231,0.5);
+    --branding-color-cream-25: #FFFFFF;
+    
+    /* Padding Horizontal */
+    --padding-horizontal-l: 75px;
+    --padding-horizontal-m: 35px;
+    --padding-horizontal-s: 15px;
+
+    /* Padding Vertical */
+    --padding-vertical-xl: 125px;
+    --padding-vertical-l: 75px;
+    --padding-vertical-m: 35px;
+    --padding-vertical-s: 15px;
+
+    /* Work float origin*/
+    --float-origin: -8%;
+    --float-origin-small: -6%;
+    --hover-origin: -55%;
+}
+
+/*
+html
+Resets the default CSS styling so we can overwrite it as we go.
+
+html is the overall document stylings for any page that we import this css file to.
+*/
+html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--color-background);
+    scroll-behavior: smooth;
+    cursor: none !important;
+    scroll-behavior: smooth;
+}
+
+/*
+body
+Resets the default CSS styling so we can overwrite it as we go.
+
+body sits inside of the HTML tag. this is where the content of your page will go.
+*/
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+}
+
+/*
+h1,h2,h3,h4
+Resets the default CSS styling so we can overwrite it as we go.
+The comma sepperated list applies these stylings to all of them at the same time.
+
+h is for header. the number indicates size where 1 is the largest and 4 is the smallest.
+*/
+h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the big headers (largest text size)
+*/
+h1{
+    font-size: 1.4em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/*
+These are the sub headers (second largest text size)
+*/
+h2{
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/*
+These are used for small blocks of text that are kind like headers but dont have a ton of importance.
+*/
+h3{
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/*
+These are used as little insertions/ exclamations. Italiced version of the p
+*/
+h4{
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/*
+This is the styling of your paragraphs and large text blocks.
+*/
+p{
+    font-size: 1.05em;
+    font-family: 'Bryant', sans-serif;
+    font-weight: 400;
+}
+
+#cursor{
+    position:fixed;
+    z-index: 999;
+    transform:translate(-50%,-50%);
+    transition: height 200ms, width 200ms, border-color 200ms, background-color 200ms;
+    pointer-events: none;
+    -webkit-transition: height 200ms, width 200ms, border-color 200ms, background-color 200ms;
+    -moz-transition: height 200ms, width 200ms, border-color 200ms, background-color 200ms;
+    -ms-transition: height 200ms, width 200ms, border-color 200ms, background-color 200ms;
+    -o-transition: height 200ms, width 200ms, border-color 200ms, background-color 200ms;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+}
+
+.cursor-default{
+    height:15px;
+    width:15px;
+    border-radius:50%;
+}
+
+.cursor-text{
+    height:20px;
+    width:5px;
+    border-radius:8%;
+    -webkit-border-radius:8%;
+    -moz-border-radius:8%;
+    -ms-border-radius:8%;
+    -o-border-radius:8%;
+}
+
+.cursor-hover{
+    height:25px;
+    width:25px;
+    border-radius:50%;
+    border:3px solid;
+    background-color: transparent !important;
+}
+
+.color-dark{
+    color: var(--branding-color-cream-0);
+}
+
+.color-teal{
+    color: var(--branding-color-teal-50)
+}
+
+.color-cream{
+    color: var(--branding-color-cream-50)
+}
+
+.background-teal{
+    background-color: var(--branding-color-teal-50);
+}
+
+.background-cream{
+    background-color: var(--branding-color-cream-50);
+}
+
+.background-coral{
+    background-color: var(--branding-color-coral-50);
+}
+
+.divider{
+    width: 100vw;
+    height: 0.25em;
+}
+
+.relative-divider{
+    width: 35%;
+    height: 0.25em;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.page-horizontal-padding{
+    padding-left: var(--padding-horizontal-l);
+    padding-right: var(--padding-horizontal-l);
+}
+
+
+
+.button-filled, .button-filled-light, .button-filled-coral {
+    scale: 0.95;
+    display: grid;
+    place-content: center;
+    padding-right: var(--padding-horizontal-s);
+    padding-top: calc(var(--padding-vertical-s)/2);
+    padding-bottom:  calc(var(--padding-vertical-s)/2);
+    padding-left: var(--padding-horizontal-s);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border:3px solid transparent;
+    transition-property: scale color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.57,-1.08,.55,.99);
+    pointer-events: auto;
+}
+
+.button-filled:hover{
+    scale: 1;
+    background-color: var(--branding-color-teal-25);
+}
+
+.button-filled:active{
+    scale: 0.9;
+    background-color: var(--branding-color-teal-25);
+}
+
+.button-filled-light:hover{
+    scale: 1;
+    background-color: var(--branding-color-cream-25);
+}
+
+.button-filled-light:active{
+    scale: 0.9;
+    background-color: var(--branding-color-cream-25);
+}
+
+.button-filled-coral:hover{
+    scale: 1;
+    background-color: var(--branding-color-coral-25);
+}
+
+.button-filled-coral:active{
+    scale: 0.9;
+    background-color: var(--branding-color-coral-25);
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.floating-l {
+    animation-name: floating;
+    animation-duration: 4.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.floating-xl {
+    animation-name: floating;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(-50%,  -45%); -webkit-transform: translate(-50%,  -45%); -moz-transform: translate(-50%,  -45%); -ms-transform: translate(-50%,  -45%); -o-transform: translate(-50%,  -45%); }
+    50%  { transform: translate(-50%,  var(--hover-origin)); -webkit-transform: translate(-50%,  var(--hover-origin)); -moz-transform: translate(-50%,  var(--hover-origin)); -ms-transform: translate(-50%,  var(--hover-origin)); -o-transform: translate(-50%,  var(--hover-origin)); }
+    100%   { transform: translate(-50%, -45%); -webkit-transform: translate(-50%, -45%); -moz-transform: translate(-50%, -45%); -ms-transform: translate(-50%, -45%); -o-transform: translate(-50%, -45%); }    
+}
+a{
+    transition-property: color;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.57,-1.08,.55,.99)
+}
+/* unvisited link */
+a:link {
+    color: inherit;
+    text-decoration: none;
+    cursor: none;
+}
+  
+  /* visited link */
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+  
+  /* mouse over link */
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+  
+/* selected link */
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-link{
+    transition-property: color;
+    transition-duration: 200ms;
+    color: var(--branding-color-teal-50);
+    transition-timing-function: cubic-bezier(.57,-1.08,.55,.99)
+}
+/* unvisited link */
+.text-link:link {
+    color: var(--branding-color-teal-50);
+    text-decoration: none;
+    cursor: none;
+}
+  
+/* visited link */
+.text-link:visited {
+    color: var(--branding-color-teal-50);
+    text-decoration: none;
+}
+  
+  /* mouse over link */
+.text-link:hover {
+    color: var(--branding-color-teal-25);
+    text-decoration: none;
+}
+  
+  /* selected link */
+.text-link:active {
+    color: var(--branding-color-teal-50);
+    text-decoration: none;
+}
+
+
+#footer{
+    background-color: var(--branding-color-coral-50);
+    padding-top: var(--padding-vertical-l);
+    padding-bottom:  var(--padding-vertical-l);
+    padding-left: var(--padding-horizontal-l);
+    padding-right: var(--padding-horizontal-l);
+}
+
+.footer_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.footer_logo{
+    background-image: url('/assets/images/Logo_2.png');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain;
+    height: 50px;
+}
+
+.footer_socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: var(--padding-vertical-m);
+}
+
+.footer_social_entry{
+    padding-left: var(--padding-horizontal-m);
+    padding-right: var(--padding-horizontal-m);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: end;
+    transition-property: stroke color;
+    transition-duration: 500ms;
+    stroke: var(--branding-color-cream-50) !important;
+    color: var(--branding-color-cream-50) !important;
+}
+
+.footer_social_entry:hover{
+    stroke: var(--branding-color-teal-25) !important;
+    color: var(--branding-color-teal-25) !important;
+}
+
+.footer_social_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_icon{
+    width: 30%;
+    max-width: 40px;
+    min-width: 35px;
+}
+
+.footer_social_icon_label{
+    width: 100%;
+    text-align: center;
+}
+
+.spacer-horizontal{
+    padding-left: var(--padding-horizontal-s);
+}
+
+@media (max-width: 750px) {
+    .footer_social_entry{
+        padding-left: var(--padding-horizontal-s);
+        padding-right: var(--padding-horizontal-s);
+    }
+}
+
+@media (max-width: 550px) {
+    .footer_icon{
+        min-width: 30px;
+    }
+}
+
+#menu{
+    display: grid;
+    place-content: center;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    overflow: hidden;
+    height: 0;
+}
+
+.menu_content_wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 101;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.menu_option{
+    font-size: 2.5em;
+}
+
+.menu_option_active{
+    color: var(--branding-color-cream-50);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+}
+
+.menu_option_inactive{
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--branding-color-cream-50);
+}
+
+.menu_background_wrapper{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 99;
+}
+
+.menu_background_tile{
+    width: 100%;
+    background-color: var(--branding-color-teal-50);
+}
+
+#menu_overlay_exit{
+    position: absolute;
+    z-index: 102;
+    bottom: var(--padding-vertical-m);
+    width: 75px;
+    height: 75px;
+    stroke: var(--branding-color-cream-50);
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+}
+
+#menu_overlay{
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    -webkit-mask-image: linear-gradient(to bottom,black 80%,transparent 100%);
+    mask-image: linear-gradient(to bottom,black 80%,transparent 100%);
+}
+
+#menu_overlay_toggle{
+    padding-left: var(--padding-horizontal-l);
+    padding-right: var(--padding-horizontal-l);
+    padding-bottom: var(--padding-vertical-s);
+    padding-top: var(--padding-vertical-s);
+    width: 30px;
+    height: 30px;
+    stroke-width: 1.5;
+}
+
+#menu_overlay_logo{
+    padding-left: var(--padding-horizontal-l);
+    padding-right: var(--padding-horizontal-l);
+    padding-bottom: var(--padding-vertical-s);
+    padding-top: var(--padding-vertical-s);
+    width: 30px;
+    height: 30px;
+    stroke-width: 0;
+}
+
+.top_menu{
+    top:0;
+}
+
+.bottom_menu{
+    bottom: 0;
+}
+
+.menu_dark{
+    fill:var(--branding-color-teal-50);
+    stroke: var(--branding-color-teal-50);
+}
+
+.menu_light{
+    fill:var(--branding-color-cream-50);
+    stroke: var(--branding-color-cream-50);
+}
+
+.hide_menu_top{
+    top: -60px;
+}
+
+.hide_menu_bottom{
+    bottom: -60px;
+}
+
+#page_transition{
+    z-index: 200;
+    position: fixed;
+    width: 100vw;
+}
+
+.page_transition_background_wrapper{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 99;
+}
+
+.page_transition_background_tile{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--branding-color-teal-50);
+}
+
+#loading_transition{
+    z-index: 200;
+    position: fixed;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+.loading_transition_background_wrapper{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 99;
+}
+
+#loading_animation{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: grid;
+    place-content: center;
+    z-index: 101;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.loading_transition_background_tile{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--branding-color-teal-50);
+}
+
+#hns_lottie{
+    transition: opacity .25s ease-in-out;
+    
+}
+
+.hide{
+    opacity: 0;
+    pointer-events: none !important;
+}

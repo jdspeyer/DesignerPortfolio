@@ -1,0 +1,10 @@
+/*
+home_about_section
+The home_about_section is a wrapper section for the internal sections: home_skills_section and home_personal_section
+
+This effects the styling and positioning of both of the above mentioned sections.
+*/
+#home_about_section{
+    width: 100vw;
+    background-color: var(--branding-color-teal-50);
+}

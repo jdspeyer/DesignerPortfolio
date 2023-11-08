@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HTML 5 Header & Import-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Adobe Fonts Import -->
+    <link rel="stylesheet" href="https://use.typekit.net/tmj1tze.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/element_styles/home_landing_section.css">
+    <link rel="stylesheet" href="./css/element_styles/home_work_section.css">
+    <link rel="stylesheet" href="./css/element_styles/home_about_skills_section.css">
+    <link rel="stylesheet" href="./css/element_styles/home_about_personal_section.css">
+    <link rel="stylesheet" href="./css/element_styles/home_about_section.css">
+
+    <title>👩🏻‍💻 Hannah Smith</title>
+</head>
+<body id="cursor_global_default" cursor-default= true cursor-color="cursor-teal" cursor-state="cursor-default">
+    
+    <div id="page_transition">
+        <div class="page_transition_background_wrapper">
+            <div class="page_transition_background_tile"></div>
+            <div class="page_transition_background_tile"></div>
+            <div class="page_transition_background_tile"></div>
+            <div class="page_transition_background_tile"></div>
+            <div class="page_transition_background_tile"></div>
+        </div>
+    </div>
+
+    <div id="loading_transition">
+        <div id="loading_animation">
+            <lottie-player id="hns_lottie"
+            renderer="svg"
+            scaleType="centerCrop"
+            mode="normal"
+            src="/assets/animations/ani.json"
+            style="width: 100%;"
+            >
+            </lottie-player>
+        </div>
+        <div class="loading_transition_background_wrapper">
+            <div class="loading_transition_background_tile"></div>
+            <div class="loading_transition_background_tile"></div>
+            <div class="loading_transition_background_tile"></div>
+            <div class="loading_transition_background_tile"></div>
+            <div class="loading_transition_background_tile"></div>
+        </div>
+    </div>
+
+    <!-- Dynamic cursor to follow the mouse -->
+    <div id="cursor"></div>
+
+    <div id="menu" cursor-default= true cursor-color="cursor-cream" cursor-state="cursor-default">
+        <div class ="menu_content_wrapper">
+            <h1 id="index_menu_item" class="menu_option menu_option_active animate-menu" cursor-default= true cursor-color="cursor-brown" cursor-state="cursor-hover">Home Page</h1>
+            <h1 id="portfolio_menu_item" class="menu_option menu_option_inactive animate-menu" cursor-default= true cursor-color="cursor-brown" cursor-state="cursor-hover">Work Page</h1>
+        </div>
+
+        <div id="menu_overlay_exit" class="animate-menu" cursor-default= true cursor-color="cursor-brown" cursor-state="cursor-hover">
+            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 14L12 10L8 14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+                
+        </div>
+       
+        <div class="menu_background_wrapper">
+            <div class="menu_background_tile"></div>
+            <div class="menu_background_tile"></div>
+            <div class="menu_background_tile"></div>
+            <div class="menu_background_tile"></div>
+            <div class="menu_background_tile"></div>
+        </div>
+    </div>
+
+    <div id="menu_overlay" class="top_menu menu_dark">
+        <div id="menu_overlay_logo" cursor-default= true cursor-color="cursor-brown" cursor-state="cursor-hover">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path class="cls-1" d="m8.38,24c-3.16,0-5.72-2.53-5.72-5.64v-3.83c0-.42.35-.76.77-.76s.77.34.77.76v3.83c0,2.27,1.87,4.11,4.18,4.11s4.18-1.85,4.18-4.11v-3.7c0-3.11,2.57-5.64,5.72-5.64s5.72,2.53,5.72,5.64v2.84c0,.42-.35.76-.77.76s-.77-.34-.77-.76v-2.84c0-2.27-1.87-4.11-4.18-4.11s-4.18,1.85-4.18,4.11v3.7c0,3.11-2.57,5.64-5.72,5.64Z"/><path class="cls-1" d="m10.71,6.51c-.43,0-.77.34-.77.76v3.83H1.54v-3.83c0-.42-.35-.76-.77-.76s-.77.34-.77.76v9.19c0,.42.35.76.77.76s.77-.34.77-.76v-3.83h8.39v3.83c0,.42.35.76.77.76s.77-.34.77-.76V7.27c0-.42-.35-.76-.77-.76Z"/><path class="cls-1" d="m8.39,0c-1.65,0-3.14.7-4.19,1.81v-.79c0-.42-.35-.76-.77-.76s-.77.34-.77.76v4.31s0,.07.01.11c0,.07-.01.14-.01.22v3.55c0,.42.35.76.77.76s.77-.34.77-.76v-3.55c0-2.28,1.88-4.13,4.19-4.13s4.19,1.85,4.19,4.13v3.55c0,.42.35.76.77.76s.77-.34.77-.76v-3.55c0-3.12-2.57-5.65-5.74-5.65Z"/>
+            </svg>
+        </div>
+        <div id="menu_overlay_toggle" cursor-default= true cursor-color="cursor-brown" cursor-state="cursor-hover">
+            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 7H20M5 12H20M5 17H20" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <!-- This is the section where the user first arrives on the homescreen.-->
+    <div id="home_landing_section" cursor-default= true cursor-color="cursor-teal" cursor-state="cursor-default">
+
+        <div class="home_landing_section_header_wrapper">
+            <div class="home_landing_section_header_pointer_blocker"></div>
+            <div class="home_landing_section_header">
+                <h1 class="landing-heading">Hi, my name</h1>
+                <h1 class="landing-heading">is Hannah.</h1>
+                <h3 class="landing-subheading">I create ethical and inclusive solutions through UI/UX and design thinking.</h3>
+                <div class="home_landing_section_header_buttons">
+                    <div id="all_projects_button" class="landing-button-wrapper" cursor-state="cursor-action">
+                        <div cursor-state="cursor-action" class="button-filled color-cream background-teal">
+                            <h3 cursor-state="cursor-action">My Work</h3>
+                        </div>
+                    </div>
+                    <div class="spacer-horizontal"></div>
+                    <a href="#home_about_section">
+                        <div class="landing-button-wrapper" cursor-state="cursor-action">
+                            <div cursor-state="cursor-action" class="button-filled-coral background-coral">
+                                <h3 cursor-state="cursor-action">About Me</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="model" class="home_landing_section_background">
+            <div class="home_landing_section_background_model">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.493/build/spline-viewer.js"></script>
+                <spline-viewer url="https://prod.spline.design/LQQhdyNnplOAQ7TZ/scene.splinecode"></spline-viewer>
+            </div>
+        </div>
+
+   
+
+    </div>
+
+    <!-- Work Section (This part is not visible to users) -->
+    <!-- This is where selected projects can be scrolled through and the remainder of work can be accessed.-->
+    <div id="home_work_section" cursor-default= true cursor-color="cursor-teal" cursor-state="cursor-default">
+        
+        <!-- Formats the below section as a column so that the header and the scroll content can be placed ontop of one another-->
+        <div id="home_work_section_mask_wrapper">
+        
+            <!-- The header of the mask that scrolls as the viewer looks through the projects. -->
+            <div id="home_work_section_mask_header">
+                <div class="home_work_section_mask_header_text">
+                    <h2 class= "animate-title" cursor-default=true cursor-color="cursor-teal" cursor-state="cursor-text">Featured Work</h2>
+                    <a class="text-link" cursor-default=true cursor-state="cursor-hover" cursor-color="cursor-brown" ><h2 class="animate-title" id="all_projects">See All Projects ➜</h2></a>
+                </div>
+            
+                <div class="divider background-teal"></div>
+            </div>
+
+            <!-- Work Section Mask (This part is what is actually visible to users) -->
+            <!-- The mask that sits ontop of the work section that allows the horizontal scrolling.-->
+            <div id="home_work_section_mask"></div>
+            
+            <div id="home_work_section_background_mask"></div>
+            <div id="home_work_section_background"></div>
+
+        </div>
+
+        
+    </div>
+
+    <!-- About Section (Has 2 sub sections) -->
+    <!-- This section works a little differently. This about section serves as a wrapper for the
+    home_skills_section and the home_personal_section. -->
+    <div id="home_about_section" cursor-default= true cursor-color="cursor-cream" cursor-state="cursor-default">
+        <!-- ABOUT SKILLS SECTION -->
+        <!-- This is the 3x1 column section where different skills/ bragging rights can be discussed. -->
+        <div id="home_about_skills_section">
+            <!-- Multi Marquee -->
+            <!-- This is the animated text marquee that goes from L->R and R->L. Two different
+            text messages can be shown on this marquee. But they must be the same for each line. -->
+            <div class="multi_marquee">
+                <!-- FIRST Marquee - This one goes to the right -->
+                <!-- MAKE SURE THE TEXT IS IDENTICAL FOR EACH PART OR THE EFFECT WONT WORK -->
+                <div class="marquee">
+                    <div class="marquee__inner">
+                    <div class="marquee__part_reverse">
+                        <h1 class="marquee__outline_text_transparent">Hannah Noelle Smith</h1>
+                        <div class="arrow_reverse">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part_reverse">
+                        <h1 class="marquee__outline_text_transparent">Hannah Noelle Smith</h1>
+                        <div class="arrow_reverse">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part_reverse">
+                        <h1 class="marquee__outline_text_transparent">Hannah Noelle Smith</h1>
+                        <div class="arrow_reverse">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part_reverse">
+                        <h1 class="marquee__outline_text_transparent">Hannah Noelle Smith</h1>
+                        <div class="arrow_reverse">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part_reverse">
+                        <h1 class="marquee__outline_text_transparent">Hannah Noelle Smith</h1>
+                        <div class="arrow_reverse">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part_reverse">
+                        <h1>Hannah Noelle Smith</h1>
+                        <div class="arrow_reverse">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    </div>
+                </div>      
+
+                <!-- SECOND Marquee - This one goes to the left -->
+                <!-- MAKE SURE THE TEXT IS IDENTICAL FOR EACH PART OR THE EFFECT WONT WORK -->
+                <div class="marquee">
+                    <div class="marquee__inner">
+                    <div class="marquee__part">
+                        <h1 class="marquee__outline_text">More Than A Designer</h1>
+                        <div class="arrow">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part">
+                        <h1 class="marquee__outline_text">More Than A Designer</h1>
+                        <div class="arrow">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part">
+                        <h1 class="marquee__outline_text">More Than A Designer</h1>
+                        <div class="arrow">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part">
+                        <h1 class="marquee__outline_text">More Than A Designer</h1>
+                        <div class="arrow">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part">
+                        <h1 class="marquee__outline_text">More Than A Designer</h1>
+                        <div class="arrow">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="marquee__part">
+                        <h1 class="marquee__outline_text">More Than A Designer</h1>
+                        <div class="arrow">
+                        <img src="/assets/animations/arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="divider background-coral"></div> 
+            </div>
+
+            <!-- SKILL CONTENT SECTION -->
+            <div id="home_about_skills_section_content">
+                <!-- Header -->
+                <div id="home_about_skills_section_header">
+                    <h4 class="color-cream animate-title" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">Why hire me?</h4>
+                    <h1 id="home_about_skills_section_header_main" class="color-cream animate-title" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">Here's what sets me apart.</h1>
+                </div>
+
+                <!-- Points/ Body -->
+                <div id="home_about_skills_section_points">
+                    <div id="skill1" class="skill_card">
+                        <h2 class="color-cream animate-title" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">User-Centered</h2>
+                        <div class="animate-object relative-divider background-coral"></div> 
+                        <p class="color-cream animate-paragraph" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">Originally from San Jose, California, I have learned how diversity and inclusion benefit communities and inform human-centered design solutions.</p>
+                    </div>
+                    <div id="skill2" class="skill_card center">
+                        <h2 class="color-cream animate-title" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">Top-Tier Practices</h2>
+                        <div class="animate-object relative-divider background-coral"></div>
+                        <p class="color-cream animate-paragraph" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">My studies cover UI/UX, graphic and product design, and sociology. I've earned certificates in Webflow, Figma, and Adobe Suite, and I'm currently pursuing the Google UX certificate.</p>
+                    </div>
+                    <div id="skill3" class="skill_card">
+                        <h2 class="color-cream animate-title" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">Award Winning</h2>
+                        <div class="animate-object relative-divider background-coral"></div>
+                        <p class="color-cream animate-paragraph" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">I have received 4 American Advertising Awards and was a main writer in a scientific paper published in 2022.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ABOUT PERSONAL SECTION -->
+        <!-- This is some background information about the author of the portfolio -->
+        <div id="home_about_personal_section" class="page-horizontal-padding">
+            <!-- The side of the about section with the text -->
+            <div id="home_about_personal_section_information">
+                <h1 id="home_about_personal_section_header_0" class="color-cream animate-title" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">Get To Know</h1>
+                <h1 id="home_about_personal_section_header_1" class="color-cream animate-title" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">Hannah Noelle Smith</h1>
+                <p id="home_about_personal_section_paragraph" class="color-cream" cursor-default=true cursor-color="cursor-brown" cursor-state="cursor-text">
+                    <span class="animate-paragraph">Focused on the art of UI/UX, UX design, product design, and design thinking.</span>
+                    <br><br>
+                    <span class="animate-paragraph">I'm currently on the path to graduation from California Baptist University in December 2023, where I'm working toward a degree in graphic design and visual experience, complemented by a minor in product design.</span>
+                    <br><br>
+                    <span class="animate-paragraph">Beyond my studies, I find joy in beachside escapes, creative crafts, savoring the perfect cup of coffee, and capturing life through the lens of photography.</span>
+                </p>
+                <a href="#footer">
+                    <div id = "home_about_personal_section_information_contact_button" class="button-wrapper" cursor-state="cursor-action">
+                        <div cursor-state="cursor-action" class="button-filled-light background-cream">
+                            <h3>Contact Me</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div id="home_about_personal_section_image">
+                <div id="home_about_personal_section_image_portrait_coin_wrapper">
+                    <div id="home_about_personal_section_image_portrait_coin">
+                        <div class="not-flipped" id="home_about_personal_section_image_portrait_coin_peep">
+                            <div id="home_about_personal_section_image_portrait_coin_peep_body"></div>
+                            <div id="home_about_personal_section_image_portrait_coin_peep_eyes"></div>
+                        </div>
+                        <div class="flipped" id="home_about_personal_section_image_portrait_coin_photo"></div>
+                        <div id="home_about_personal_section_image_item_0" class="floating"></div>
+                        <div id="home_about_personal_section_image_item_1" class="floating-xl"></div>
+                        <div id="home_about_personal_section_image_item_2" class="floating-l"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <!-- Every page will have access to this footer. -->
+    <div id="footer" cursor-default= true cursor-color="cursor-cream" cursor-state="cursor-default">
+
+        <!-- The header section with the text -->
+        <div class="footer_header">
+            <h4 class="color-cream animate-paragraph" cursor-default= true cursor-color="cursor-teal" cursor-state="cursor-text">Like what you see?</h4>
+            <h1 class="color-cream animate-paragraph" cursor-default= true cursor-color="cursor-teal" cursor-state="cursor-text">Let's Connect!</h1>
+        </div>
+
+        <!-- The logo inbetween the logos and the titles -->
+        <div class="footer_logo animate-object"  cursor-default= true cursor-color="cursor-teal" cursor-state="cursor-hover"></div>
+
+        <!-- The social icons to get in contact -->
+        <div class="footer_socials">
+
+            <!-- The Email Icon -->
+            <a href="mailto:itsanotherhannah@gmail.com">
+                <div class="footer_social_entry" cursor-default= true cursor-color="cursor-cream" cursor-state="cursor-hover">
+                    <div class="footer_social_icon">
+                        <svg class="footer_icon" viewBox="0 0 59 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="animate-svg-path" d="M10.8984 37.1002L11.0984 10.3002L29.1984 19.9002L47.5984 10.2002V37.5002" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="animate-svg-path" d="M13.5 2H44.7C51 2 56.2 7.3 56.2 13.9V32.3C56.2 38.9 51.1 44.2 44.7 44.2H13.5C7.2 44.2 2 38.8 2 32.2V13.8C2.1 7.3 7.2 2 13.5 2Z" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                             
+                    </div>
+                    <p class="footer_social_icon_label">Email Me!</p>
+                </div>
+            </a>
+
+            <!-- The Instagram Icon -->
+            <a href="https://www.instagram.com/anotherhannah.design/">
+                <div class="footer_social_entry" cursor-default= true cursor-color="cursor-cream" cursor-state="cursor-hover">
+                    <div class="footer_social_icon">
+                        <svg class="footer_icon" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="animate-svg-path" d="M37.8 50.6H12.2C6.6 50.6 2 46 2 40.4V12.2C2 6.6 6.6 2 12.2 2H37.8C43.4 2 48 6.6 48 12.2V40.5C48 46.1 43.4 50.6 37.8 50.6Z" stroke-width="4" stroke-miterlimit="10"/>
+                            <path class="animate-svg-path" d="M25.0016 37.7004C31.2976 37.7004 36.4016 32.5964 36.4016 26.3004C36.4016 20.0043 31.2976 14.9004 25.0016 14.9004C18.7055 14.9004 13.6016 20.0043 13.6016 26.3004C13.6016 32.5964 18.7055 37.7004 25.0016 37.7004Z" stroke-width="4" stroke-miterlimit="10"/>
+                            <path class="animate-svg-path" d="M39.1984 14.2006C39.9164 14.2006 40.4984 13.6186 40.4984 12.9006C40.4984 12.1826 39.9164 11.6006 39.1984 11.6006C38.4805 11.6006 37.8984 12.1826 37.8984 12.9006C37.8984 13.6186 38.4805 14.2006 39.1984 14.2006Z" stroke-width="4" stroke-miterlimit="10"/>
+                        </svg>                        
+                    </div>
+                    <p class="footer_social_icon_label">Follow Me!</p>
+                </div>
+            </a>
+            
+            <!-- The Call Icon -->
+            <a href="tel:1-408-596-2465">
+                <div class="footer_social_entry" cursor-default= true cursor-color="cursor-cream" cursor-state="cursor-hover">
+                    <div class="footer_social_icon">
+                        <svg class="footer_icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="animate-svg-path" d="M19.0031 14.5996C19.5031 14.5996 20.1031 14.5996 20.6031 15.7996C21.0031 16.5996 21.5031 18.0996 22.0031 19.2996C22.4031 20.1996 22.7031 20.9996 22.8031 21.0996C23.0031 21.4996 23.1031 21.8996 22.9031 22.3996C22.9031 22.4996 22.8031 22.4996 22.8031 22.5996C22.6031 22.9996 22.5031 23.2996 22.2031 23.5996C22.1031 23.6996 21.9031 23.8996 21.8031 24.0996C21.6031 24.3996 21.3031 24.6996 21.1031 24.8996C20.7031 25.2996 20.4031 25.5996 20.8031 26.3996C21.2031 27.0996 22.6031 29.4996 24.7031 31.3996C27.0031 33.3996 28.9031 34.2996 29.9031 34.6996C30.1031 34.7996 30.3031 34.8996 30.4031 34.8996C31.1031 35.2996 31.5031 35.1996 31.9031 34.6996C32.3031 34.1996 33.7031 32.5996 34.1031 31.8996C34.6031 31.1996 35.0031 31.2996 35.7031 31.4996C36.4031 31.6996 39.8031 33.4996 40.5031 33.7996C40.6031 33.8996 40.8031 33.8996 40.9031 33.9996C41.4031 34.1996 41.7031 34.3996 41.9031 34.5996C42.1031 34.8996 42.1031 36.2996 41.5031 37.9996C40.9031 39.6996 38.0031 41.2996 36.7031 41.3996C36.6031 41.3996 36.5031 41.3996 36.3031 41.3996C35.1031 41.4996 33.6031 41.6996 28.2031 39.5996C21.5031 36.8996 17.1031 30.2996 16.2031 28.9996C16.1031 28.8996 16.1031 28.7996 16.1031 28.7996C15.7031 28.1996 13.2031 24.8996 13.2031 21.3996C13.2031 18.0996 14.8031 16.2996 15.5031 15.5996C15.5031 15.4996 15.6031 15.4996 15.6031 15.4996C16.3031 14.7996 17.0031 14.5996 17.5031 14.5996C18.2031 14.5996 18.6031 14.5996 19.0031 14.5996Z" stroke-width="3" stroke-miterlimit="10"/>
+                            <path class="animate-svg-path" d="M28.1 2C13.9 2 2.5 13.5 2.5 27.7C2.5 32.9 3.3 36.9 5.9 40.9L6 41.1L2 53.8L15.3 50.2C19.2 52.6 23.1 53.3 28.1 53.3C42.2 53.3 53.7 41.8 53.7 27.7C53.7 13.5 42.2 2 28.1 2Z" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="footer_social_icon_label">Call Me!</p>
+                </div>
+            </a>
+
+            <!-- The Portfolio Icon -->
+            <a href="https://issuu.com/anotherhannah/docs/hannahsmith-personalportfoliobook-updated">
+                <div class="footer_social_entry" cursor-default= true cursor-color="cursor-cream" cursor-state="cursor-hover">
+                    <div class="footer_social_icon">
+                        <svg class="footer_icon" viewBox="0 0 59 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="animate-svg-path" d="M2 4.6724C2 4.6724 16.9 -2.7276 28.8 7.5724C28.8 7.5724 42.9 -2.6276 56.1 4.5724V38.6724C56.1 38.6724 39.7 33.3724 29.1 41.5724C29.1 41.5724 17.3 33.2724 2.5 38.3724L2 4.6724Z" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="animate-svg-path" d="M29.1008 41.4723L28.8008 7.57227" stroke-width="4" stroke-miterlimit="10"/>
+                            <path class="animate-svg-path" d="M4.30078 46.9728C4.30078 46.9728 10.2008 43.1728 14.8008 44.6728C19.4008 46.1728 25.8008 50.1728 28.4008 50.1728C30.9008 50.1728 39.7008 45.2728 42.2008 44.8728C46.7008 44.1728 52.3008 45.2728 53.9008 46.9728" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </svg>                                                              
+                    </div>
+                    <p class="footer_social_icon_label">My Portfolio!</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Imported Javascript Files-->
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+    <script src="/javascript/imports/SplitText.min.js"></script>
+    <script src="/javascript/imports/DrawSVGPlugin.min.js"></script>
+
+    <!-- Registration and Initialization-->
+    <script>
+        gsap.registerPlugin(SplitText, ScrollTrigger, DrawSVGPlugin, Flip)
+    </script>
+
+    <!-- CUSTOM -->
+    <script type="module" src="/javascript/scripts/listeners.js"></script>
+    <script type="module" src="/javascript/scripts/text_animations.js"></script>
+    <script type="module" src="/javascript/scripts/loading_transition.js"></script>
+    <style>
+     
+    </style>
+</body>
+</html>

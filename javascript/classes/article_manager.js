@@ -17,7 +17,6 @@ class ArticleManager {
 
     articles.forEach(article => {
       const newArticle = ArticleManager.#processArticleEntry(article)
-      newArticle.classList.add('animate-object-up')
       articleListWrapper.appendChild(newArticle)
     })
 

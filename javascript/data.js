@@ -269,7 +269,245 @@ const blvdProject = new Project({
   tags: ['UI/ UX', 'Award Winning'],
   projectNumber: '/02',
   isOnHomePage: true,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['Adobe XD Prototype'],
+  role: 'Main Designer',
+  projectLink: 'https://youtu.be/p72fFKRyJPA',
+  projectLinkText: 'Check out on YouTube!',
+  articles: [
+    /// AN IMAGE
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: false,
+          url: '../../assets/images/project_pages/blvd/blvd_0.jpg'
+        }
+      ]
+    },
+
+    /// TWO TEXT ELEMENTS SIDE BY SIDE
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Problem'
+            },
+            {
+              id: 'textArticle',
+              text: 'BLVD Coffee is a small family business located in Los Gatos, California. It is a fantastic coffee shop that has regulars and celebrates the traditions of "Old Los Gatos" by cultivating a brand of quality coffee and a quality community. Since the business started in the 90s, the logo and branding have become quickly outdated, not representing the cornerstones of the business. The current website features inconsistent typefaces, an uninformed branding system, confusing website construction, and a lack of consistent imagery.'
+            }
+          ]
+        },
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Solution'
+            },
+            {
+              id: 'textArticle',
+              text: 'After identifying the current problems with the website and becoming informed to design for the business, finding the solution becomes easy: redesigning the website and branding.'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/01 Process - Research'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'The first part of the process was researching the original website and noting flaws or inconsistencies with the overall design and layout. I did this by going through each website page and annotating my thoughts. I also researched some other restaurants and coffee shops to gain inspiration for what I would like to do.'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/blvd/blvd_1.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/02 Process - Ideation'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              contain: true,
+              url: '../../assets/images/project_pages/blvd/blvd_2.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              contain: true,
+              url: '../../assets/images/project_pages/blvd/blvd_3.png'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/03 Process - Low Fidelity Wireframes'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              contain: true,
+              url: '../../assets/images/project_pages/blvd/blvd_4.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              contain: true,
+              url: '../../assets/images/project_pages/blvd/blvd_5.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/04 Process - Medium Fidelity Wireframes'
+        },
+        {
+          id: 'rowWrapper',
+          parent: true,
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/blvd/blvd_6.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/blvd/blvd_7.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/blvd/blvd_8.jpg'
+            }
+          ]
+        },
+        {
+          id: 'rowWrapper',
+          parent: true,
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/blvd/blvd_9.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/blvd/blvd_10.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/blvd/blvd_11.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/05 Process - Style Guide'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: false,
+          url: '../../assets/images/project_pages/blvd/blvd_12.png'
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/06 Process - High Fidelity Wireframes'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: false,
+          url: '../../assets/images/project_pages/blvd/blvd_13.png'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: false,
+          url: '../../assets/images/project_pages/blvd/blvd_14.png'
+        }
+      ]
+    }
+  ]
 })
 
 /// Like Real People Do Music Video project information
@@ -283,7 +521,12 @@ const realPeopleDoProject = new Project({
   tags: ['VFX', 'Award Winning'],
   projectNumber: '/03',
   isOnHomePage: true,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['After Effects Video'],
+  role: 'Main Designer',
+  projectLink: 'https://youtu.be/EfwgOJRCISQ',
+  projectLinkText: 'Check out on YouTube!',
+  articles: []
 })
 
 /// Gaiani project information
@@ -297,7 +540,12 @@ const gaianiProject = new Project({
   tags: ['Product Design', 'Award Winning'],
   projectNumber: '/04',
   isOnHomePage: true,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['Final Presentation', '3D Printed Prototype', 'Process Video'],
+  role: 'Main Designer and Researcher',
+  projectLink: 'https://youtu.be/0Gko4vcha4U?si=EW27zhKlh-https://youtu.be/0Gko4vcha4U?si=EW27zhKlh-yzxmEb',
+  projectLinkText: 'Check out on YouTube!',
+  articles: []
 })
 
 const dunkinProject = new Project({
@@ -310,7 +558,12 @@ const dunkinProject = new Project({
   tags: ['Campaign', 'Award Winning'],
   projectNumber: '/05',
   isOnHomePage: false,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['Poster'],
+  role: 'Main Designer',
+  projectLink: 'https://www.behance.net/gallery/135585911/Dunkin-Ad',
+  projectLinkText: 'Check out on Behance!',
+  articles: []
 })
 
 const hoverProject = new Project({
@@ -323,7 +576,12 @@ const hoverProject = new Project({
   tags: ['Product Design'],
   projectNumber: '/06',
   isOnHomePage: false,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['3D Printed Prototype'],
+  role: 'Main Designer & Researcher',
+  projectLink: '',
+  projectLinkText: '',
+  articles: []
 })
 
 const metaProject = new Project({
@@ -336,7 +594,12 @@ const metaProject = new Project({
   tags: ['Campaign', 'Award Winning'],
   projectNumber: '/07',
   isOnHomePage: false,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['3 Poster Advertising Campaign'],
+  role: 'Main Designer & Researcher',
+  projectLink: 'https://www.behance.net/gallery/166461901/Meta-Ad-Campaign',
+  projectLinkText: 'Check out on Behance!',
+  articles: []
 })
 
 const istanbulProject = new Project({
@@ -349,7 +612,12 @@ const istanbulProject = new Project({
   tags: ['Campaign', 'Branding'],
   projectNumber: '/08',
   isOnHomePage: false,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['Brand System', 'Comprehensive Campaign'],
+  role: 'Main Designer & Researcher',
+  projectLink: 'https://www.behance.net/gallery/105556353/City-Tourism-Istanbul',
+  projectLinkText: 'Check out on Behance!',
+  articles: []
 })
 
 const desvuProject = new Project({
@@ -362,7 +630,12 @@ const desvuProject = new Project({
   tags: ['Campaign', 'Branding'],
   projectNumber: '/09',
   isOnHomePage: false,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['Brand System', 'Comprehensive Campaign'],
+  role: 'Main Designer & Researcher',
+  projectLink: 'https://www.behance.net/gallery/108428573/Airline-Branding-Project',
+  projectLinkText: 'Check out on Behance!',
+  articles: []
 })
 
 const sensibleProject = new Project({
@@ -375,7 +648,12 @@ const sensibleProject = new Project({
   tags: ['UI/UX', 'Scientific Paper'],
   projectNumber: '/10',
   isOnHomePage: false,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['Web Application', 'Scientific Paper'],
+  role: 'Main Designer & Researcher',
+  projectLink: 'https://drive.google.com/file/d/1ebf62JSL2chfPVBJA3MvwZeeJDYn6gce/view',
+  projectLinkText: 'Read the published paper!',
+  articles: []
 })
 
 /// These are the projects that you will be using throughout the website.

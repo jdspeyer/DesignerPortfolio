@@ -56,13 +56,97 @@ const gaianiProject = new Project({
   isOnWorkPage: true
 })
 
+const dunkinProject = new Project({
+  mockupImage: 'assets/images/gaiani.png',
+  coverImage: 'assets/images/dunkin_cover.jpg',
+  title: 'Dunkin Donuts Poster',
+  missionStatement: 'The Dunkin Donuts campaign poster was recognized with a gold student ADDY award at the 2022 local competition in the Inland Empire. The poster was designed utilizing the substitution principle, which cleverly incorporates elements of the Dunkin brand while adding a playful touch of modernity. The design thus emphasizes the convenience of on-the-go and delivery services that are so highly sought-after in today’s fast-paced society. The design’s simplicity shines through in efficiently communicating the message.',
+  description: '',
+  projectId: 'dunkin',
+  tags: ['Campaign', 'Award Winning'],
+  projectNumber: '/05',
+  isOnHomePage: false,
+  isOnWorkPage: true
+})
+
+const hoverProject = new Project({
+  mockupImage: 'assets/images/gaiani.png',
+  coverImage: 'assets/images/hover_cover.jpg',
+  title: 'Hover: Adaptable Spoon',
+  missionStatement: 'Hover is an innovative adaptive utensil designed to modernize the current design of adaptive utensils. Using 3D printing technology and an extensive design process, I created this unique spoon to provide for individuals with arthritis and other disabilities. Adaptive utensils enable this demographic to be independent in eating. However, those on the current market are only tailored for functionality rather than style. Hover bridges this gap by offering a sleek and comfortable design that caters to individuals between 20 and 80. In addition, this utensil gives the hope of being a piece to be shown off rather than an embarrassing implement to be concealed.',
+  description: '',
+  projectId: 'hover',
+  tags: ['Product Design'],
+  projectNumber: '/06',
+  isOnHomePage: false,
+  isOnWorkPage: true
+})
+
+const metaProject = new Project({
+  mockupImage: 'assets/images/gaiani.png',
+  coverImage: 'assets/images/meta_cover.jpg',
+  title: 'Meta Ad Campaign',
+  missionStatement: 'This advertising campaign was recognized with a bronze student ADDY award at the 2023 local competition in the Inland Empire. The project’s original goal, as proposed by the professor, was to “construct an image” through physical means. Paying homage to Meta, a company that has become a cornerstone of creativity and inspiration for many, the campaign was designed to celebrate its initiative of bringing creatives together online. The logos of Meta’s parent companies were constructed from foam and hot glue, with over 18 hours in total of cutting and hand construction invested in these pieces.',
+  description: '',
+  projectId: 'meta',
+  tags: ['Campaign', 'Award Winning'],
+  projectNumber: '/07',
+  isOnHomePage: false,
+  isOnWorkPage: true
+})
+
+const istanbulProject = new Project({
+  mockupImage: 'assets/images/gaiani.png',
+  coverImage: 'assets/images/istanbul_cover.jpg',
+  title: 'Istanbul Campaign',
+  missionStatement: 'The Istanbul Tourism Campaign aimed to promote the city as one of the world’s most culturally diverse, beautiful, and historic destinations. The campaign’s focal point was a symbolic logo representing the main pillars of Istanbul, including industry, religion, architecture, unique location, people, and art scene. The logo’s intricate patterns drew inspiration from the city’s beautiful tiles and tapestries, integral to its rich cultural heritage. Through its thoughtful branding system, the campaign aimed to attract tourists worldwide to experience the city’s vibrant culture, awe-inspiring architecture, and warm hospitality.',
+  description: '',
+  projectId: 'istanbul',
+  tags: ['Campaign', 'Branding'],
+  projectNumber: '/08',
+  isOnHomePage: false,
+  isOnWorkPage: true
+})
+
+const desvuProject = new Project({
+  mockupImage: 'assets/images/gaiani.png',
+  coverImage: 'assets/images/desvu_cover.jpg',
+  title: 'DeśVu Airlines',
+  missionStatement: 'This project’s main objective was to develop a contemporary airline brand that inspires travelers to explore new destinations. This project’s scope encompasses proposing a new airline brand and creating an entire branding system to be implemented throughout the business. The resulting brand, DeVuèAir, is centered around the idea that "moments start with us." The tagline, "Moments Start with Us," encapsulates the essence of the brand and its commitment to providing a memorable travel experience, thus specializing in promoting fair-priced flights to exotic locations to Millennial and Gen-Z customers.',
+  description: '',
+  projectId: 'desvu',
+  tags: ['Campaign', 'Branding'],
+  projectNumber: '/09',
+  isOnHomePage: false,
+  isOnWorkPage: true
+})
+
+const sensibleProject = new Project({
+  mockupImage: 'assets/images/gaiani.png',
+  coverImage: 'assets/images/sensible_cover.jpg',
+  title: 'Sensible App',
+  missionStatement: 'Sensible was designed for the semester-long EGR102 course taught at California Baptist University. The course serves as an introduction to fundamental techniques used in engineering design and analysis. Different models of the design process will be examined. A collaborative team-oriented design project will be undertaken. The final project of the course is a robotics competition. The team aims to assemble robots to scan various sensors on a map, indicating the amount of ping pong balls that should be collected. Sensible was developed to replace the outdated reading in the sensors’ data through Google Sheets. Sensible aims to deliver a more reliable, fast, and user-friendly interface for the EGR102 students to read the sensor data during the competition. As a result of the team’s collaboration in this unique format, a scientific paper was published regarding the design thinking methods used to make the application. I was the primary writer of this paper, which can be found on 74 of the linked document.',
+  description: '',
+  projectId: 'sensible',
+  tags: ['UI/UX', 'Scientific Paper'],
+  projectNumber: '/10',
+  isOnHomePage: false,
+  isOnWorkPage: true
+})
+
 /// These are the projects that you will be using throughout the website.
 /// If you want a project visible somewhere you will need to define it here and make a page for it within the work/projects folder.
 const PORTFOLIO_PROJECTS = [
   swellProject,
   blvdProject,
   realPeopleDoProject,
-  gaianiProject
+  gaianiProject,
+  dunkinProject,
+  hoverProject,
+  metaProject,
+  istanbulProject,
+  desvuProject,
+  sensibleProject
 ]
 
 export default PORTFOLIO_PROJECTS

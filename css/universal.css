@@ -33,6 +33,7 @@ want to change.
     --padding-vertical-l: 75px;
     --padding-vertical-m: 35px;
     --padding-vertical-s: 15px;
+    --padding-vertical-xs: 5px;
 
     /* Work float origin*/
     --float-origin: -8%;
@@ -54,6 +55,7 @@ html{
     scroll-behavior: smooth;
     cursor: none !important;
     scroll-behavior: smooth;
+    background-color: var(--branding-color-cream-50);
 }
 
 /*
@@ -65,7 +67,7 @@ body sits inside of the HTML tag. this is where the content of your page will go
 body{
     margin: 0;
     padding: 0;
-    /* overflow-x: clip; */
+    overflow-x: clip;
 }
 
 /*
@@ -193,6 +195,16 @@ p{
 .divider{
     width: 100vw;
     height: 0.25em;
+}
+
+.full-relatitive-divider{
+    width: 100%;
+    height: 0.25em;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .relative-divider{

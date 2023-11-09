@@ -71,3 +71,19 @@ allSvgAnimations.forEach(object => {
     }
   })
 })
+
+const allObjectUpAnimations = document.querySelectorAll('.animate-object-up')
+allObjectUpAnimations.forEach(object => {
+  gsap.from(object, {
+    yPercent: 130,
+    opacity: 0,
+    stagger: 0.01,
+    duration: 0.5,
+    delay: 0.0,
+    scrollTrigger: {
+      trigger: object,
+      start: 'top 120%',
+      markers: false
+    }
+  })
+})

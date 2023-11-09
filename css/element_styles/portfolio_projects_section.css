@@ -1,13 +1,33 @@
+#portfolio_header{
+    padding-top: var(--padding-vertical-l);
+    padding-bottom: var(--padding-vertical-l);
+    padding-right: var(--padding-horizontal-l);
+    padding-left: var(--padding-horizontal-l);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio_heading{
+    font-size: 2.5em;
+}
+
 #portfolio_items{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: var(--padding-vertical-l);
 }
 
 .project_row{
-    width: 100%;
     display: flex;
     flex-direction: row;
+    gap: var(--padding-horizontal-l);
+    padding-bottom: var(--padding-vertical-m);
+    padding-left: var(--padding-horizontal-l);
+    padding-right: var(--padding-horizontal-l);
 }
 
 .portfolio_wrapper{
@@ -16,7 +36,56 @@
     width: 100%;
 }
 
+.portfolio_hover_wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    transition-property: opacity;
+    transition-duration: 500ms;
+    overflow: hidden;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+
+.portfolio_hover_wrapper:hover{
+    backdrop-filter: blur(2px);
+}
+
+.portfolio_hover_wrapper > div{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    background-color: var(--branding-color-cream-50);
+    transition-property: opacity;
+    transition-duration: 500ms;
+    z-index: 3;
+}
+
+.portfolio_hover_wrapper > h1{
+    opacity: 0;
+    position: relative;
+    transition-property: opacity;
+    transition-duration: 500ms;
+    z-index: 4;
+}
+
+.portfolio_hover_wrapper:hover > div{
+    opacity: 0.3 !important;
+}
+
+.portfolio_hover_wrapper:hover > h1{
+    opacity: 1 !important;
+}
+
 .porfolio_project_image{
+    position: relative;
     width: 100%;
     aspect-ratio: 20 / 11;
     background-repeat: no-repeat;
@@ -38,16 +107,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: var(--padding-vertical-xs);
+    padding-bottom: var(--padding-vertical-s);
+}
+
+.porfolio_project_details_header > p {
+    margin: 0;
 }
 
 .porfolio_project_details_tags{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    gap: var(--padding-vertical-xs) var(--padding-horizontal-s);
 }
 
 .project_details_tag{
     display: flex;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -55,21 +133,63 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    padding-top: var(--padding-vertical-xs);
+    padding-bottom: var(--padding-vertical-xs);
+    padding-left: var(--padding-vertical-s);
+    padding-right: var(--padding-vertical-s);
+}
+
+.project_details_tag > p{
+    margin: 0;
 }
 
 .award_tag{
-    color: red;
-    background-image: linear-gradient(var(--branding-color-teal-50), var(--branding-color-teal-25));
+    background-image: linear-gradient(0.25turn, var(--branding-color-teal-50), var(--branding-color-teal-25));
 }
 
-.campaign_tag{}
+.campaign_tag{
+    background-color: var(--branding-color-coral-50);
+}
 
-.product_tag{}
+.product_tag{
+    background-color: var(--branding-color-teal-25);
+}
 
-.branding_tag{}
+.branding_tag{
+    color: var(--branding-color-cream-50);
+    background-color: var(--branding-color-brown-50);
+}
 
-.paper_tag{}
+.paper_tag{
+    background-image: linear-gradient(0.25turn, var(--branding-color-teal-25), var(--branding-color-coral-50));
 
-.vfx_tag{}
+}
 
-.ux_tag{}
+.vfx_tag{
+    background-image: linear-gradient(0.25turn, var(--branding-color-brown-50), var(--branding-color-coral-50));
+}
+
+.ux_tag{
+    background-color: var(--branding-color-blue-50);
+}
+
+@media (max-width: 870px) {
+    .project_row{
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: var(--padding-vertical-m);
+    }  
+}
+
+@media (max-width: 500px) {
+    #portfolio_header{
+        padding-right: var(--padding-horizontal-m);
+        padding-left: var(--padding-horizontal-m);
+    }
+    .project_row{
+        padding-bottom: var(--padding-vertical-m);
+        padding-left: var(--padding-horizontal-m);
+        padding-right: var(--padding-horizontal-m);
+        gap: var(--padding-vertical-m);
+    }
+}

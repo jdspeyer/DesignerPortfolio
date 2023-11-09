@@ -32,7 +32,8 @@ class PortfolioManager {
 
   #generatePortfolioProject (project) {
     const portfolioProject = document.createElement('div')
-    portfolioProject.classList = ['portfolio_wrapper']
+    portfolioProject.classList = ['portfolio_wrapper animate-object-up']
+
     portfolioProject.appendChild(this.#generateProjectImage(project))
     portfolioProject.appendChild(this.#generateProjectDetails(project))
     return portfolioProject
@@ -42,6 +43,21 @@ class PortfolioManager {
     const portfolioProjectImage = document.createElement('div')
     portfolioProjectImage.classList = ['porfolio_project_image']
     portfolioProjectImage.style.backgroundImage = `url('../${project.coverImage}')`
+
+    const portfolioProjectHoverWrapper = document.createElement('div')
+    portfolioProjectHoverWrapper.setAttribute('cursor-state', 'cursor-hover')
+    portfolioProjectHoverWrapper.setAttribute('cursor-color', 'cursor-teal')
+    portfolioProjectHoverWrapper.setAttribute('cursor-default', true)
+    portfolioProjectHoverWrapper.classList = ['portfolio_hover_wrapper']
+
+    const hoverBackground = document.createElement('div')
+    const hoverText = document.createElement('h1')
+    hoverText.innerHTML = 'Read ➜'
+    portfolioProjectHoverWrapper.appendChild(hoverText)
+    portfolioProjectHoverWrapper.appendChild(hoverBackground)
+
+    portfolioProjectImage.appendChild(portfolioProjectHoverWrapper)
+
     return portfolioProjectImage
   }
 
@@ -58,10 +74,16 @@ class PortfolioManager {
     const portfolioProjectDetailsHeader = document.createElement('div')
     portfolioProjectDetailsHeader.classList = ['porfolio_project_details_header']
 
-    const title = document.createElement('h2')
+    const title = document.createElement('h3')
+    title.setAttribute('cursor-state', 'cursor-text')
+    title.setAttribute('cursor-color', 'cursor-teal')
+    title.setAttribute('cursor-default', true)
     title.innerHTML = project.title
 
     const number = document.createElement('p')
+    number.setAttribute('cursor-state', 'cursor-text')
+    number.setAttribute('cursor-color', 'cursor-teal')
+    number.setAttribute('cursor-default', true)
     number.innerHTML = project.projectNumber
 
     portfolioProjectDetailsHeader.appendChild(title)

@@ -584,11 +584,45 @@ const realPeopleDoProject = new Project({
         }
       ]
     },
+    /// STEP 1
+    /// COL WRAPPER
     {
-      id: 'rowWrapper',
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/01 Process - Research'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'During my research, I drew significant inspiration from a specific dance featured in a video choreographed by Keone and Mari, which I first discovered while watching a dance television program. The idea to incorporate paper-cutout techniques was originally ignited by the creative work of the artist and choreographer Hokuto Konishi (@Hok on Instagram). His innovative approach to physical stop-motion photography and videos served as the catalyst for my decision to digitally adapt this method, employing After Effects.'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/likerealpeopledo/likerealpeopledo_1.jpg'
+            }
+          ]
+        }
+      ]
+    },
+
+    /// VIDEO
+    {
+      id: 'colWrapper',
       padded: true,
       parent: true,
       children: [
+        {
+          id: 'titleArticle',
+          title: '/02 Process - Final Product'
+        },
         {
           id: 'videoArticle',
           url: 'https://www.youtube.com/embed/EfwgOJRCISQ?si=8Txza7_LDFyRlemA'
@@ -639,7 +673,21 @@ const dunkinProject = new Project({
   role: 'Main Designer',
   projectLink: 'https://www.behance.net/gallery/135585911/Dunkin-Ad',
   projectLinkText: 'Check out on Behance!',
-  articles: []
+  articles: [
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '197 / 130',
+          contain: false,
+          url: '../../assets/images/project_pages/dunkin/dunkin_0.jpg'
+        }
+      ]
+    }
+  ]
 })
 
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -683,7 +731,34 @@ const metaProject = new Project({
   role: 'Main Designer & Researcher',
   projectLink: 'https://www.behance.net/gallery/166461901/Meta-Ad-Campaign',
   projectLinkText: 'Check out on Behance!',
-  articles: []
+  articles: [
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '5 / 2',
+          contain: false,
+          url: '../../assets/images/project_pages/meta/meta_0.jpg'
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '1580 / 889',
+          contain: false,
+          url: '../../assets/images/project_pages/meta/meta_1.jpg'
+        }
+      ]
+    }
+  ]
 })
 
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -9,7 +9,10 @@ import PortfolioManager from '../classes/portfolio_manager.js'
 
 const MOUSE_MANAGER = new MouseManager()
 const MENU_MANAGER = new MenuManager()
-const PORTFOLIO_MANAGER = new PortfolioManager()
+try {
+  const PORTFOLIO_MANAGER = new PortfolioManager()
+} catch (e) {}
+
 document.getElementById('menu_overlay').onclick = MENU_MANAGER.openMenu
 document.getElementById('menu_overlay_exit').onclick = MENU_MANAGER.closeMenu
 document.getElementById('index_menu_item').onclick = function () { MENU_MANAGER.navTo('index_menu_item', true) }

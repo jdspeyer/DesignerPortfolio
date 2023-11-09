@@ -31,7 +31,10 @@ class Project {
     coverImage = 'assets/images/placeholder_mockup.png',
     tags = [],
     role = 'Designer',
-    deliverables = []
+    deliverables = [],
+    articles = [],
+    projectLink = '',
+    projectLinkText = ''
 
   }) {
     this.title = title
@@ -49,6 +52,11 @@ class Project {
     this.tags = tags
     this.role = role
     this.deliverables = deliverables
+
+    this.articles = articles
+
+    this.projectLink = projectLink
+    this.projectLinkText = projectLinkText
   }
 }
 

@@ -11,7 +11,251 @@ const swellProject = new Project({
   tags: ['UI/ UX'],
   projectNumber: '/01',
   isOnHomePage: true,
-  isOnWorkPage: true
+  isOnWorkPage: true,
+  deliverables: ['Survey research', 'Adobe XD Prototype'],
+  role: 'Main Designer and Researcher',
+  projectLink: 'https://youtu.be/O5SH-LyKq3w?si=plYKEudxWZ_XzLN9',
+  projectLinkText: 'Check out on YouTube!',
+  articles: [
+    /// AN IMAGE
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: false,
+          url: '../../assets/images/project_pages/swell/swell_1.jpg'
+        }
+      ]
+    },
+
+    /// TWO TEXT ELEMENTS SIDE BY SIDE
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Problem'
+            },
+            {
+              id: 'textArticle',
+              text: 'Growing up going to the beach often and being immersed in the surf culture, I’ve noticed a common challenge within the surfing community. While there are plenty of resources to check out wave and weather conditions at various surf spots, not all of them provide reliable information. In fact, some can be downright confusing and unpredictable. It’s also been clear to me that the most dependable data often comes with a premium price tag.<br><br>Far too many times, I have heard stories of people eagerly driven about 45 minutes to hit the beach, only to find lackluster waves, less-than-ideal weather, and overcrowded lineups. It’s not just a waste of time and money; it’s frustrating when surfing is meant to be all about fun and relaxation.'
+            }
+          ]
+        },
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Solution'
+            },
+            {
+              id: 'textArticle',
+              text: 'My application addresses this issue by curating lists of surf destinations in proximity to your current location, while also offering the functionality to search for specific locations of interest. The application outputs detailed result pages for each surf spot, encapsulating a compilation of pertinent information for beach go-ers. This approach facilitates your ability to discern the most suitable surf location for a given day with ease and precision.'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/01 Process - Research'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'I conducted a survey targeting 10 individuals from my intended user base, seeking insights into their perspectives on surfing. A recurring theme emerged from the responses, highlighting surfing as a means of escaping the rigors of daily life and reconnecting with the natural world. The survey participants commonly cited factors such as extended travel times, overcrowded surf breaks, and suboptimal wave conditions as significant sources of frustration that detract from the simplicity and enjoyment of surfing. <br><br>Many surfers expressed their willingness to embark on extensive journeys in search of ideal wave conditions, only to be disheartened by the realization that their investments in time and money did not yield the desired outcomes. This underscores the pressing need for an application of this nature.<br><br>The envisioned application serves to address the core issue of identifying beaches and surf spots where the conditions are optimal for the pursuit of the water sport of choice, surfing. Furthermore, it promises to streamline the process, reducing downtime and mitigating the frustration associated with locating the perfect surf spot in close proximity.'
+            },
+            {
+              id: 'htmlArticle',
+              html: '<div class="flourish-embed" data-src="story/1757024"></div>'
+            }
+          ]
+        }
+      ]
+    },
+    /// ROW WRAPPER
+    {
+      id: 'rowWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: false,
+          url: '../../assets/images/project_pages/swell/swell_2.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: false,
+          url: '../../assets/images/project_pages/swell/swell_4.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: false,
+          url: '../../assets/images/project_pages/swell/swell_3.jpg'
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/02 Process - Site Map'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: true,
+          url: '../../assets/images/project_pages/swell/swell_5.jpg'
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/03 Process - Low Fidelity Wireframes'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/swell/swell_6.png'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              url: '../../assets/images/project_pages/swell/swell_7.png'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/04 Process - Medium Fidelity Wireframes'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '9 / 16',
+              contain: true,
+              url: '../../assets/images/project_pages/swell/swell_8.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '9 / 16',
+              contain: true,
+              url: '../../assets/images/project_pages/swell/swell_9.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '9 / 16',
+              contain: true,
+              url: '../../assets/images/project_pages/swell/swell_10.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '9 / 16',
+              contain: true,
+              url: '../../assets/images/project_pages/swell/swell_11.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/05 Process - Style Guide'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: false,
+          url: '../../assets/images/project_pages/swell/swell_12.png'
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/06 Process - High Fidelity Wireframes'
+        },
+        {
+          id: 'rowWrapper',
+          parent: true,
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              contain: false,
+              url: '../../assets/images/project_pages/swell/swell_13.png'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '20 / 11',
+              contain: false,
+              url: '../../assets/images/project_pages/swell/swell_14.png'
+            }
+          ]
+        }
+      ]
+    }
+  ]
 })
 
 /// BLVD Website project information

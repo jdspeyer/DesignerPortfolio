@@ -192,6 +192,10 @@ p{
     background-color: var(--branding-color-coral-50);
 }
 
+.background-light{
+    background-color: var(--branding-color-cream-25);
+}
+
 .divider{
     width: 100vw;
     height: 0.25em;

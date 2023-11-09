@@ -528,8 +528,8 @@ a:active {
     padding-right: var(--padding-horizontal-l);
     padding-bottom: var(--padding-vertical-s);
     padding-top: var(--padding-vertical-s);
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     stroke-width: 1.5;
 }
 
@@ -538,8 +538,8 @@ a:active {
     padding-right: var(--padding-horizontal-l);
     padding-bottom: var(--padding-vertical-s);
     padding-top: var(--padding-vertical-s);
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     stroke-width: 0;
 }
 
@@ -562,11 +562,11 @@ a:active {
 }
 
 .hide_menu_top{
-    top: -60px;
+    top: -75px;
 }
 
 .hide_menu_bottom{
-    bottom: -60px;
+    bottom: -75px;
 }
 
 #page_transition{

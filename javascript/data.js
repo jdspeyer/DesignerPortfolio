@@ -651,7 +651,222 @@ const gaianiProject = new Project({
   role: 'Main Designer and Researcher',
   projectLink: 'https://youtu.be/0Gko4vcha4U?si=EW27zhKlh-https://youtu.be/0Gko4vcha4U?si=EW27zhKlh-yzxmEb',
   projectLinkText: 'Check out on YouTube!',
-  articles: []
+  articles: [
+    /// Landing Image
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '5 / 2',
+          contain: false,
+          url: '../../assets/images/project_pages/gaiani/gaiani_0.jpg'
+        }
+      ]
+    },
+    /// TWO TEXT ELEMENTS SIDE BY SIDE
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Problem'
+            },
+            {
+              id: 'textArticle',
+              text: 'Most medical products, including medicine boxes, are not made by people who need these products daily to function. As a person who has struggled with chronic illnesses, I bring a brand new perspective to this market. Allow more people to feel seen and recognized through the product I create.Current medicine containers lack the design insight of someone who is chronically ill, leaving them to have a lack of privacy, outdated in their design, and not user friendly.'
+            }
+          ]
+        },
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Solution'
+            },
+            {
+              id: 'textArticle',
+              text: 'To create a viable product using research and user testing from real people with chronic illness, exploring updated product design techniques, and ultimately giving visibility to this community within a society that values abled people. I plan to make an easy-to-use, sleek, customizable medicine case that empowers people with chronic illnesses to manage their health.'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/01 Process - Research Brief'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'This project involved several weeks of research, which encompassed a comprehensive examination of scientific studies, in-store assessments of current products, and the creation of a slide deck summarizing these findings. Additionally, I conducted a survey that garnered over 115 responses from my target audience. The insights from this survey played a pivotal role in shaping the designs, enabling a deeper and more meaningful connection with the chronic illness community.'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '943 / 490',
+              url: '../../assets/images/project_pages/gaiani/gaiani_1.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/02 Process - Ideation'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'The ideation process involved hundreds of sketches, jotting notes throughout the day that reminded me of something. The main inspiration that made everything click for me was actually using inspiration from nature. I watched nature documentaries and looking at organic forms. I was looking at fish, snapdragon flowers, palm trees, and various seed pods.'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '943 / 490',
+              url: '../../assets/images/project_pages/gaiani/gaiani_2.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/03 Process - Prototype'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '487 / 463',
+              url: '../../assets/images/project_pages/gaiani/gaiani_3.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '487 / 463',
+              url: '../../assets/images/project_pages/gaiani/gaiani_4.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '487 / 463',
+              url: '../../assets/images/project_pages/gaiani/gaiani_5.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: false,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/04 Process - Style Guide'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '20 / 11',
+          contain: true,
+          url: '../../assets/images/project_pages/gaiani/gaiani_6.png'
+        }
+      ]
+    },
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/05 Process - Deliver'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '625 / 486',
+              url: '../../assets/images/project_pages/gaiani/gaiani_7.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '85 / 48',
+              url: '../../assets/images/project_pages/gaiani/gaiani_8.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// Landing Image
+    {
+      id: 'colWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/06 Process - Final 3D Printed Prototype'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '5 / 2',
+          contain: false,
+          url: '../../assets/images/project_pages/gaiani/gaiani_9.jpg'
+        }
+      ]
+    },
+    {
+      id: 'colWrapper',
+      padded: true,
+      parent: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/07 Process - Video'
+        },
+        {
+          id: 'videoArticle',
+          url: 'https://www.youtube.com/embed/0Gko4vcha4U?si=g57Kc-n8sR6sDSym'
+        }
+      ]
+    }
+  ]
 })
 
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -780,7 +995,9 @@ const istanbulProject = new Project({
   role: 'Main Designer & Researcher',
   projectLink: 'https://www.behance.net/gallery/105556353/City-Tourism-Istanbul',
   projectLinkText: 'Check out on Behance!',
-  articles: []
+  articles: [
+
+  ]
 })
 
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////

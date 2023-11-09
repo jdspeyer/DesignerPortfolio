@@ -996,7 +996,283 @@ const istanbulProject = new Project({
   projectLink: 'https://www.behance.net/gallery/105556353/City-Tourism-Istanbul',
   projectLinkText: 'Check out on Behance!',
   articles: [
-
+    /// Landing Image
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '5 / 2',
+          contain: false,
+          url: '../../assets/images/project_pages/istanbul/istanbul_0.jpg'
+        }
+      ]
+    },
+    /// TWO TEXT ELEMENTS SIDE BY SIDE
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Problem'
+            },
+            {
+              id: 'textArticle',
+              text: 'Istanbul is a cosmopolitan city that attracted nearly 15 million tourists in 2019. Additionally, the city occupied 33 percent of all foreign visitors (Turkish Statistical Insitute). Standing alone, Istanbul as a city speaks for itself; however, the branding system it currently has does not communicate the vast city and culture Istanbul represents. Currently, Istanbul has two logos, one for its tourism website and one for the Istanbul council, which makes decisions regarding the city. These two logos can be confusing and need to reflect a unified system.'
+            }
+          ]
+        },
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Solution'
+            },
+            {
+              id: 'textArticle',
+              text: 'This project’s objective was to pick a city and create a branding system that effectively communicates and encourages people to travel and explore that location. This project includes building a logo that can be used universally throughout the area, a tagline that encapsulates the core message of the place, a unique pattern and brand colors, an ad campaign, pole signage, travel postcards, and branded items. This project spanned six weeks, in which our teacher tasked us with going through the creative process from napkin sketches to final solutions and a presentation.'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/01 Process - Research Brief'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'To design an effective design system for Istanbul, I researched the location history, art, and culture of the area. I looked through many resources to get a broad and detailed perspective of the location.'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '943 / 490',
+              url: '../../assets/images/project_pages/istanbul/istanbul_1.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/02 Process - Ideation'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '943 / 490',
+              url: '../../assets/images/project_pages/istanbul/istanbul_3.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '943 / 490',
+              url: '../../assets/images/project_pages/istanbul/istanbul_4.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/03 Process - Refine'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '82 / 107',
+              url: '../../assets/images/project_pages/istanbul/istanbul_4.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '82 / 107',
+              url: '../../assets/images/project_pages/istanbul/istanbul_5.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '82 / 107',
+              url: '../../assets/images/project_pages/istanbul/istanbul_6.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: false,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/04 Process - Style Guide'
+        },
+        {
+          id: 'rowWrapper',
+          parent: true,
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '523 / 415',
+              url: '../../assets/images/project_pages/istanbul/istanbul_7.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '523 / 415',
+              url: '../../assets/images/project_pages/istanbul/istanbul_8.jpg'
+            }
+          ]
+        },
+        {
+          id: 'rowWrapper',
+          parent: true,
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '129 / 55',
+              url: '../../assets/images/project_pages/istanbul/istanbul_9.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '129 / 55',
+              url: '../../assets/images/project_pages/istanbul/istanbul_10.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/05 Process - Deliver'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '397 / 240',
+              url: '../../assets/images/project_pages/istanbul/istanbul_11.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '397 / 240',
+              url: '../../assets/images/project_pages/istanbul/istanbul_12.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      lighten: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '1625 / 493',
+          contain: false,
+          url: '../../assets/images/project_pages/istanbul/istanbul_13.jpg'
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      lighten: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '1625 / 493',
+          contain: false,
+          url: '../../assets/images/project_pages/istanbul/istanbul_14.jpg'
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      lighten: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '1625 / 493',
+          contain: false,
+          url: '../../assets/images/project_pages/istanbul/istanbul_15.jpg'
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      lighten: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '1625 / 493',
+          contain: false,
+          url: '../../assets/images/project_pages/istanbul/istanbul_16.jpg'
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      lighten: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '1625 / 493',
+          contain: false,
+          url: '../../assets/images/project_pages/istanbul/istanbul_17.jpg'
+        }
+      ]
+    }
   ]
 })
 

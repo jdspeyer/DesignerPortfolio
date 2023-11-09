@@ -67,6 +67,17 @@ body{
     margin: 0;
 }
 
+#project_projectlink_text{
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(.57,-1.08,.55,.99);
+    color: var(--branding-color-teal-25)
+}
+
+#project_projectlink_text:hover{
+    color: var(--branding-color-teal-50)
+}
+
 .article_col_wrapper{
     display: flex;
     flex-direction: column;

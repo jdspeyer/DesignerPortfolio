@@ -1532,7 +1532,98 @@ const sensibleProject = new Project({
   role: 'Main Designer & Researcher',
   projectLink: 'https://drive.google.com/file/d/1ebf62JSL2chfPVBJA3MvwZeeJDYn6gce/view',
   projectLinkText: 'Read the published paper!',
-  articles: []
+  articles: [
+    /// Landing Image
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '5 / 2',
+          contain: false,
+          url: '../../assets/images/project_pages/sensible/sensible_0.jpg'
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '364 / 291',
+          contain: false,
+          url: '../../assets/images/project_pages/sensible/sensible_1.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '364 / 291',
+          contain: false,
+          url: '../../assets/images/project_pages/sensible/sensible_2.jpg'
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '364 / 291',
+          contain: false,
+          url: '../../assets/images/project_pages/sensible/sensible_3.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '364 / 291',
+          contain: false,
+          url: '../../assets/images/project_pages/sensible/sensible_4.jpg'
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '364 / 291',
+          contain: false,
+          url: '../../assets/images/project_pages/sensible/sensible_5.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '364 / 291',
+          contain: false,
+          url: '../../assets/images/project_pages/sensible/sensible_6.jpg'
+        }
+      ]
+    },
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '364 / 291',
+          contain: false,
+          url: '../../assets/images/project_pages/sensible/sensible_7.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '364 / 291',
+          contain: false,
+          url: '../../assets/images/project_pages/sensible/sensible_8.jpg'
+        }
+      ]
+    }
+  ]
 })
 
 /// These are the projects that you will be using throughout the website.

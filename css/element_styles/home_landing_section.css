@@ -145,7 +145,10 @@ This contains the title text and some additional basic information about you.
     }
 
     .landing-subheading{
-        font-size: 1.2em;
+        font-size: 1.10em;
+        padding-left: var(--padding-horizontal-s);
+        padding-right: var(--padding-horizontal-s);
+        
     }
 
     .home_landing_section_background{

@@ -22,7 +22,7 @@ document.getElementById('all_projects').onclick = function () { MENU_MANAGER.nav
 document.getElementById('all_projects_button').onclick = function () { MENU_MANAGER.navTo('portfolio_menu_item', false) }
 
 if (Engine.isTouchDevice()) {
-  document.getElementById('model').classList.add('ignore_input')
+  // document.getElementById('model').classList.add('ignore_input')
 
   document.getElementById('menu_overlay_logo').style.display = 'none'
   document.getElementById('menu_overlay').classList = ['bottom_menu menu_dark']

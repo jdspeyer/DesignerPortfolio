@@ -53,7 +53,7 @@ html{
     overflow-x: hidden;
     background-color: var(--color-background);
     scroll-behavior: smooth;
-    cursor: none !important;
+    cursor: none;
     scroll-behavior: smooth;
     background-color: var(--branding-color-cream-50);
 }

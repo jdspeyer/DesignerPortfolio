@@ -28,7 +28,7 @@ if (Engine.isTouchDevice()) {
   document.getElementById('menu_overlay_exit').classList.add('mobile_overlay_exit')
   document.getElementById('menu_overlay').classList = ['bottom_menu menu_dark']
   document.getElementById('menu_overlay').style.justifyContent = 'center'
-  document.getElementById('cursor').style.display = 'none'
+  // document.getElementById('cursor').style.display = 'none'
 }
 
 /// Create a listener for mouse movement and update the Engine.

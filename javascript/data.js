@@ -924,7 +924,176 @@ const hoverProject = new Project({
   role: 'Main Designer & Researcher',
   projectLink: '',
   projectLinkText: '',
-  articles: []
+  articles: [
+    /// Landing Image
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '5 / 2',
+          contain: false,
+          url: '../../assets/images/project_pages/hover/hover_0.jpg'
+        }
+      ]
+    },
+    /// TWO TEXT ELEMENTS SIDE BY SIDE
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Problem'
+            },
+            {
+              id: 'textArticle',
+              text: 'Adaptive silverware is primarily used by individuals with medical diagnoses that hinder their motion stability, memory or brain function, or grip. In the United States, approximately 23% of older adults rely on adaptive equipment, with arthritis being a growing concern affecting 25% of American adults, a figure expected to increase to nearly 50% by 2040. Common conditions requiring adaptive utensils include stroke, arthritis, cerebral palsy, dementia, Alzheimer’s cancer, and carpal tunnel syndrome. Many individuals feel embarrassed to use adaptable spoons due to their chunky, childish design and inadequate utensil instructions, leading to a lack of user-friendliness. This highlights the need for our adaptable spoon company to address these issues and create a more inclusive and user-friendly product.'
+            }
+          ]
+        },
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Solution'
+            },
+            {
+              id: 'textArticle',
+              text: 'Hover is an innovative adaptive utensil designed to modernize the current design of adaptive utensils. Using 3D printing technology and an extensive design process, I created this unique spoon to provide for individuals with arthritis and other disabili-ties. Adaptive utensils enable this demographic to be independent in eating. How-ever, those on the current market are only tailored for functionality rather than style. Hover bridges this gap by offering a sleek and comfortable design that caters to individuals between 20 and 80. In addition, this utensil gives the hope of being a piece to be shown off rather than an embarrassing implement to be concealed.'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/01 Process - Research Brief'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'To design an effective design system for Istanbul, I researched the location history, art, and culture of the area. I looked through many resources to get a broad and detailed perspective of the location.'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '943 / 490',
+              url: '../../assets/images/project_pages/hover/hover_1.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/02 Process - Ideation'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'This research entailed a comprehensive examination of existing adaptable spoon designs, a thorough investigation into the specific conditions and scenarios in which these spoons are required, and a deep exploration of design insights that can inform and enhance the development of our product. The research was conducted to gain a comprehensive understanding of the adaptable spoon market and to lay the foundation for future product creation.'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '368 / 491',
+              url: '../../assets/images/project_pages/hover/hover_2.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '368 / 491',
+              url: '../../assets/images/project_pages/hover/hover_3.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/03 Process - Prototype'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '368 / 491',
+              url: '../../assets/images/project_pages/hover/hover_4.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '368 / 491',
+              url: '../../assets/images/project_pages/hover/hover_5.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '847 / 565',
+              url: '../../assets/images/project_pages/hover/hover_6.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: false,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/04 Process - Deliver'
+        },
+        {
+          id: 'rowWrapper',
+          parent: true,
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '847 / 565',
+              url: '../../assets/images/project_pages/hover/hover_7.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '847 / 565',
+              url: '../../assets/images/project_pages/hover/hover_8.jpg'
+            }
+          ]
+        }
+      ]
+    }
+  ]
 })
 
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1295,7 +1295,222 @@ const desvuProject = new Project({
   role: 'Main Designer & Researcher',
   projectLink: 'https://www.behance.net/gallery/108428573/Airline-Branding-Project',
   projectLinkText: 'Check out on Behance!',
-  articles: []
+  articles: [
+    /// Landing Image
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'imageArticle',
+          aspectRatio: '5 / 2',
+          contain: false,
+          url: '../../assets/images/project_pages/desvu/desvu_0.jpg'
+        }
+      ]
+    },
+    /// TWO TEXT ELEMENTS SIDE BY SIDE
+    {
+      id: 'rowWrapper',
+      padded: true,
+      parent: true,
+      children: [
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Problem'
+            },
+            {
+              id: 'textArticle',
+              text: 'The airline industry is evolving, and more than 4.5 billion people choose to fly. However, the airlines are staying the same and catering to the needs of these modern passengers. While airlines are focused on advancing in-flight features to cater to Millenials and Gen Z, such as wifi, USB ports in seats, and flight payment via a mobile device, they aren’t focusing on updating their company’s entire experience and design and marketing. The problem with airlines today is the hassle of traveling, booking, and planning trips, the unpleasant in-flight experience, and even simply getting through the airport to find your flight. The design in some of these airlines can be dated and, while well-trusted, hasn’t been updated to gain new engagement with the modern traveler.'
+            }
+          ]
+        },
+        {
+          id: 'colWrapper',
+          children: [
+            {
+              id: 'titleArticle',
+              title: 'Solution'
+            },
+            {
+              id: 'textArticle',
+              text: 'This project aims to create a modern airline encouraging people to travel and explore new locations. This includes proposing a new airline and creating an entire branding system applicable throughout their business. This project’s key elements include creating a logo that symbolizes the airline, a tagline that communicates the core message, a unique pattern and brand colors, tail and full-body airplane designs, promotional ads, and branded items. This project spanned six weeks and covered the entire creative process, from research and ideation to final solutions.'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/01 Process - Research Brief'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'Starting this project, I researched extensively about the airline business. I wanted a broad picture of the industry, so I explored everything from design to travel trends and passenger statistics and reflected on my personal experiences with airline travel.'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '943 / 490',
+              url: '../../assets/images/project_pages/desvu/desvu_1.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/02 Process - Ideation'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'textArticle',
+              text: 'In this project, I gathered input from peers and my instructor to narrow down potential airline names. After considering various options, I focused on DèsVu and Soli. I then embarked on sketching and design, constantly refining and seeking feedback—extensive research into travel-related words and their meanings enriched the creative journey. As the project evolved, I digitally crafted the logos, ultimately selecting DèsVu as the preferred direction. The exploration continued with various arrow angles and font styles for the d. Simultaneously, I brainstormed tagline options, received feedback, and ultimately chose Memories Start Here as the final touch.'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '943 / 490',
+              contain: true,
+              url: '../../assets/images/project_pages/desvu/desvu_2.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/03 Process - Refine'
+        },
+        {
+          id: 'rowWrapper',
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '643 / 442',
+              contain: true,
+              url: '../../assets/images/project_pages/desvu/desvu_3.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '643 / 442',
+              contain: true,
+              url: '../../assets/images/project_pages/desvu/desvu_4.jpg'
+            }
+          ]
+        }
+      ]
+    },
+    /// COL WRAPPER
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: false,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/04 Process - Style Guide'
+        },
+        {
+          id: 'rowWrapper',
+          parent: true,
+          children: [
+            {
+              id: 'imageArticle',
+              aspectRatio: '629 / 396',
+              url: '../../assets/images/project_pages/desvu/desvu_5.jpg'
+            },
+            {
+              id: 'imageArticle',
+              aspectRatio: '629 / 396',
+              url: '../../assets/images/project_pages/desvu/desvu_6.jpg'
+            }
+          ]
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '704 / 301',
+          url: '../../assets/images/project_pages/desvu/desvu_7.jpg'
+        }
+      ]
+    },
+    {
+      id: 'colWrapper',
+      parent: true,
+      padded: true,
+      lighten: true,
+      children: [
+        {
+          id: 'titleArticle',
+          title: '/05 Process - Deliver'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '1738 / 477',
+          contain: false,
+          url: '../../assets/images/project_pages/desvu/desvu_8.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '1738 / 477',
+          contain: false,
+          url: '../../assets/images/project_pages/desvu/desvu_9.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '1738 / 477',
+          contain: false,
+          url: '../../assets/images/project_pages/desvu/desvu_10.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '1738 / 477',
+          contain: false,
+          url: '../../assets/images/project_pages/desvu/desvu_11.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '1738 / 477',
+          contain: false,
+          url: '../../assets/images/project_pages/desvu/desvu_12.jpg'
+        },
+        {
+          id: 'imageArticle',
+          aspectRatio: '1738 / 477',
+          contain: false,
+          url: '../../assets/images/project_pages/desvu/desvu_13.jpg'
+        }
+      ]
+    }
+  ]
 })
 
 /// //////////////////////////////////////////////////////////////////////////////////////////////////////////////

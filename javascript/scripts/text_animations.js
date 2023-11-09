@@ -82,7 +82,7 @@ allObjectUpAnimations.forEach(object => {
     delay: 0.0,
     scrollTrigger: {
       trigger: object,
-      start: 'top 120%',
+      start: 'top 150%',
       markers: false
     }
   })

@@ -34,7 +34,7 @@ Add:
     HEY! DONT FORGET TO CHANGE THIS!
     IMPORTANT CHANGE THIS FOR EACH PROJECT! THIS IS THE ONLY THING THAT NEEDS TO CHANGE IN THIS FILE!
 -->
-<body projectId="swell">
+<body projectId="swell"  cursor-default= true cursor-color="cursor-teal" cursor-state="cursor-default">
     
     <!-- Universal Content -->
     <div id="cursor"></div>
@@ -86,35 +86,35 @@ Add:
     <!-- END OF UNIVERSAL CONTENT -->
 
     <!-- The project title and divider -->
-    <div id="project_header">
-        <h1 id="project_title" class="portfolio_heading"></h1>
-        <div class="full-relatitive-divider background-teal"></div>
+    <div id="project_header" class ="animate-object-up">
+        <h1 id="project_title" class="portfolio_heading" cursor-state="cursor-text"></h1>
+        <div class="full-relatitive-divider background-teal" cursor-color="cursor-brown"></div>
     </div>
 
     <!-- The project cover image  -->
-    <div id="project_cover_image">
+    <div id="project_cover_image" class ="animate-object-up">
         <div id="project_cover_image_display"></div>
     </div>
 
     <!-- The project mission statement and related -->
-    <div id="project_description">
+    <div id="project_description" class ="animate-object-up">
         <div id="project_description_col_a">
-            <h2 id="project_description_title">Project Description</h2>
-            <div class="animate-object relative-divider background-teal"></div> 
-            <p id="project_description_text"></p>
+            <h2 id="project_description_title" cursor-state="cursor-text">Project Description</h2>
+            <div class="relative-divider background-teal" cursor-color="cursor-brown"></div> 
+            <p cursor-state="cursor-text" id="project_description_text"></p>
         </div>
         <div id="project_description_col_b">
             <div class="project_description_bullet_point">
-                <h2 id="project_deliverables_title">Deliverables</h2>
-                <div id="project_deliverables_text"></div>
+                <h2 cursor-state="cursor-text" id="project_deliverables_title">Deliverables</h2>
+                <div cursor-default=true cursor-color="cursor-teal" cursor-state="cursor-text" id="project_deliverables_text"></div>
             </div>
             <div class="project_description_bullet_point">
-                <h2 id="project_roles_title">Roles</h2>
-                <p id="project_roles_text"></p>
+                <h2 cursor-state="cursor-text" id="project_roles_title">Roles</h2>
+                <p cursor-state="cursor-text" id="project_roles_text"></p>
             </div>
             <div class="project_description_bullet_point">
-                <h2 id="project_projectlink_title">Project Link</h2>
-                <a target="_blank" href="" id="project_projectlink_link"><p id="project_projectlink_text"></p></a>
+                <h2 cursor-state="cursor-text" id="project_projectlink_title">Project Link</h2>
+                <a target="_blank" href="" id="project_projectlink_link"><p cursor-state="cursor-hover" cursor-color="cursor-brown" id="project_projectlink_text"></p></a>
             </div>
         </div>
     </div>
@@ -209,9 +209,9 @@ Add:
     </script>
 
     <script type="module" src="../../javascript/scripts/portfolio_listeners.js"></script>
-    <script type="module" src="../../javascript/scripts/text_animations.js"></script>
-    <script type="module" src="../../javascript/scripts/page_transition.js"></script>
     <script type="module" src="../../javascript/scripts/project_generator.js"></script>
     <script src="https://public.flourish.studio/resources/embed.js"></script>
+    <script type="module" src="../../javascript/scripts/page_transition.js"></script>
+    <script type="module" src="../../javascript/scripts/text_animations.js"></script>
 </body>
 </html>

@@ -130,10 +130,8 @@ class MenuManager {
   }
 
   async navTo (key, menuOpen) {
-    console.log('made it')
     /// set the scrolling to disabled
     document.documentElement.style.overflowY = 'hidden'
-
     /// Is the menu already open? if it is then we just need to nav and close it
     if (menuOpen) {
       const allMenuAnimations = document.querySelectorAll('.animate-menu')
@@ -160,7 +158,6 @@ class MenuManager {
         }
       })
     } else {
-      console.log('made it')
       const transitionTiles = document.querySelectorAll('.page_transition_background_tile')
       gsap.to(transitionTiles, {
         height: '100vh',
@@ -172,12 +169,14 @@ class MenuManager {
         },
         onComplete: function () {
           if (key === 'index_menu_item') {
-            window.location.href = 'homepage.html'
+            window.location.href = '/homepage.html'
           }
 
           if (key === 'portfolio_menu_item') {
-            window.location.href = 'work/portfolio.html'
+            window.location.href = '/work/portfolio.html'
           }
+
+          if (key !== 'index_menu_item' && key !== 'portfolio_menu_item') { window.location.href = `/work/portfolio/${key}.html` }
         }
       })
     }

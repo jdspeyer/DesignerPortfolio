@@ -1,6 +1,7 @@
 import Debugger from './debugger.js'
 import Engine from './engine.js'
 import PORTFOLIO_PROJECTS from '../data.js'
+import MenuManager from '../classes/menu_manager.js'
 
 /**
  * ProjectManager
@@ -68,6 +69,7 @@ class ProjectManager {
    * Used to generate the text area to the left of the image.
    */
   #generateProjectInformation ({ wrapper, project }) {
+    const MENU_MANAGER = new MenuManager()
     /// The container that will hold all of this information
     const projectInformationWrapper = document.createElement('div')
     projectInformationWrapper.classList = ['project_information_wrapper']
@@ -119,7 +121,7 @@ class ProjectManager {
 
     projectButton.appendChild(projectButtonText)
     projectButtonWrapper.appendChild(projectButton)
-
+    projectButtonWrapper.onclick = function () { MENU_MANAGER.navTo(project.projectId, false) }
     /// Adding the contents to the projectInformationWrapper
     projectInformationWrapper.appendChild(projectTagTitleWrapper)
     projectInformationWrapper.appendChild(projectButtonWrapper)

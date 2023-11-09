@@ -1,4 +1,5 @@
 import PORTFOLIO_PROJECTS from '../data.js'
+import MenuManager from '../classes/menu_manager.js'
 
 class PortfolioManager {
   constructor () {
@@ -40,6 +41,7 @@ class PortfolioManager {
   }
 
   #generateProjectImage (project) {
+    const MENU_MANAGER = new MenuManager()
     const portfolioProjectImage = document.createElement('div')
     portfolioProjectImage.classList = ['porfolio_project_image']
     portfolioProjectImage.style.backgroundImage = `url('../${project.coverImage}')`
@@ -57,7 +59,7 @@ class PortfolioManager {
     portfolioProjectHoverWrapper.appendChild(hoverBackground)
 
     portfolioProjectImage.appendChild(portfolioProjectHoverWrapper)
-
+    portfolioProjectImage.onclick = function () { MENU_MANAGER.navTo(project.projectId, false) }
     return portfolioProjectImage
   }
 

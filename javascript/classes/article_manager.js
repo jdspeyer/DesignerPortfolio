@@ -16,7 +16,9 @@ class ArticleManager {
     const articleListWrapper = document.createElement('div')
 
     articles.forEach(article => {
-      articleListWrapper.appendChild(ArticleManager.#processArticleEntry(article))
+      const newArticle = ArticleManager.#processArticleEntry(article)
+      newArticle.classList.add('animate-object-up')
+      articleListWrapper.appendChild(newArticle)
     })
 
     return articleListWrapper

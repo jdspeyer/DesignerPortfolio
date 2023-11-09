@@ -149,11 +149,11 @@ class MenuManager {
             delay: 0.1
           })
           if (key === 'index_menu_item') {
-            window.location.href = '/homepage.html'
+            window.location.href = '/homepage'
           }
 
           if (key === 'portfolio_menu_item') {
-            window.location.href = '/work/portfolio.html'
+            window.location.href = '/work/portfolio'
           }
         }
       })
@@ -169,14 +169,14 @@ class MenuManager {
         },
         onComplete: function () {
           if (key === 'index_menu_item') {
-            window.location.href = '/homepage.html'
+            window.location.href = '/homepage'
           }
 
           if (key === 'portfolio_menu_item') {
-            window.location.href = '/work/portfolio.html'
+            window.location.href = '/work/portfolio'
           }
 
-          if (key !== 'index_menu_item' && key !== 'portfolio_menu_item') { window.location.href = `/work/portfolio/${key}.html` }
+          if (key !== 'index_menu_item' && key !== 'portfolio_menu_item') { window.location.href = `/work/portfolio/${key}` }
         }
       })
     }

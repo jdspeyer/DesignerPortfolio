@@ -93,11 +93,6 @@ class Engine {
       finePointer = false
     }
 
-    console.log(finePointer)
-    console.log(canHover)
-    console.log(canPoint)
-    console.log('--------')
-
     /* The primary input mechanism of the
     device does not include a pointing device. */
     if (!canPoint) {

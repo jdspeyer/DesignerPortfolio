@@ -70,9 +70,55 @@ class Engine {
   }
 
   static isTouchDevice () {
-    return (('ontouchstart' in window) ||
-       (navigator.maxTouchPoints > 0) ||
-       (navigator.msMaxTouchPoints > 0))
+    let finePointer = false
+    let canHover = true
+    let canPoint = true
+
+    /// We know with 100% certainty that there is a mouse of some sort attached to this item
+    if (window.matchMedia('(pointer: fine)').matches) {
+      finePointer = true
+    }
+
+    /// There is no way for them to hover - (Mobile)
+    if (window.matchMedia('(any-hover: none)').matches) {
+      canHover = false
+    }
+
+    /// There is no way for them
+    if (window.matchMedia('(pointer: none)').matches) {
+      canPoint = false
+    }
+
+    if (window.matchMedia('(pointer: coarse)').matches) {
+      finePointer = false
+    }
+
+    console.log(finePointer)
+    console.log(canHover)
+    console.log(canPoint)
+    console.log('--------')
+
+    /* The primary input mechanism of the
+    device does not include a pointing device. */
+    if (!canPoint) {
+      return true
+    }
+
+    /// We have a fine pointer and we can hover...
+    /// More than likely we have a mouse or something
+    if (finePointer && canHover) {
+      return false
+    }
+
+    if (canHover) {
+      return false
+    }
+
+    return true
+
+    // return (('ontouchstart' in window) ||
+    //    (navigator.maxTouchPoints > 0) ||
+    //    (navigator.msMaxTouchPoints > 0))
   }
 }
 

@@ -146,7 +146,16 @@ class ArticleManager {
   /// LOWEST LEVEL - ARTICLE
   /// Generate the video article
   static #generateVideoArticle (videoUrl) {
+    const videoArticle = document.createElement('div')
+    videoArticle.classList = ['video_article']
 
+    const videoArticlePlayer = document.createElement('iframe')
+    videoArticlePlayer.classList = ['video_article_player']
+    videoArticlePlayer.src = videoUrl
+
+    videoArticle.appendChild(videoArticlePlayer)
+
+    return videoArticle
   }
 
   /// LOWEST LEVEL - ARTICLE

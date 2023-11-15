@@ -1,6 +1,6 @@
 class Debugger {
   /// Should the debugger log items to the console?
-  static shouldLog = true
+  static shouldLog = false
   static shouldLogMovement = false
 
   /**

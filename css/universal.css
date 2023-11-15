@@ -651,3 +651,9 @@ a:active {
 .ignore_input{
     pointer-events: none !important;
 }
+
+@media (max-width: 555px) {
+    #awwwards{
+        display: none !important;
+    }
+}

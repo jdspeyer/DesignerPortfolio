@@ -11,5 +11,10 @@ gsap.to(transitionTiles, {
   },
   onComplete: function () {
     document.documentElement.style.overflowY = 'auto'
+
+    try {
+      const awwwwardsEntry = document.getElementById('awwwards')
+      awwwwardsEntry.style.display = 'inherit'
+    } catch (e) {}
   }
 })

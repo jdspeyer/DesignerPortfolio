@@ -38,6 +38,8 @@ function revealPageContent () {
       from: 'left'
     },
     onComplete: function () {
+      const awwwwardsEntry = document.getElementById('awwwards')
+      awwwwardsEntry.style.display = 'inherit'
       const loadingAnimationWrapper = document.getElementById('loading_animation')
       loadingAnimationWrapper.style.height = '0px'
       document.documentElement.style.overflowY = 'auto'

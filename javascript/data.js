@@ -1691,7 +1691,7 @@ const sensibleProject = new Project({
   coverImage: 'assets/images/sensible_cover.jpg',
   title: 'Sensible App',
   missionStatement: 'Sensible was designed for the semester-long EGR102 course taught at California Baptist University. The course serves as an introduction to fundamental techniques used in engineering design and analysis. Different models of the design process will be examined. A collaborative team-oriented design project will be undertaken. The final project of the course is a robotics competition. The team aims to assemble robots to scan various sensors on a map, indicating the amount of ping pong balls that should be collected. Sensible was developed to replace the outdated reading in the sensors’ data through Google Sheets. Sensible aims to deliver a more reliable, fast, and user-friendly interface for the EGR102 students to read the sensor data during the competition. As a result of the team’s collaboration in this unique format, a scientific paper was published regarding the design thinking methods used to make the application. I was the primary writer of this paper, which can be found on 74 of the linked document.',
-  description: '',
+  description: 'This would be the description.',
   projectId: 'sensible',
   tags: ['UI/UX', 'Scientific Paper'],
   projectNumber: '/10',
